@@ -8,53 +8,55 @@ import gallery6 from "../public/princify-7.png";
 
 const PastEvents = () => {
   return (
-    <div className=" p-5 container mx-auto">
-      <h6 className=" text-sm font-medium text-[#6E796F] mb-2">PAST EVENTS</h6>
-      <h3 className=" sm:leading-[44px] font-extrabold text-2xl sm:text-4xl mb-10 text-[#222823]">
+    <div className=" px-5 container mx-auto mt-20 md:mt-[144px] ">
+      <h6 className="leading-[24px] text-[16px] font-medium text-[#6E796F] mb-[16px]">
+        PAST EVENTS
+      </h6>
+      <h3 className="leading-[50px] font-extrabold text-[43px] mb-10 md:mb-20 text-[#222823] md:leading-[88px] md:text-[81px] ">
         Explore moments <br />
         we helped make
       </h3>
       <div className=" flex flex-col md:flex-row justify-between gap-3 mb-3">
-        <div className="flex-1 h-[612px]">
+        <div className="flex-1 h-[250px] md:h-96 lg:h-[708px]">
           <Image
             src={gallery1}
             alt="gallery"
-            className=" object-cover w-full h-full rounded object-top"
+            className=" object-cover w-full h-full rounded-lg object-top"
           />
         </div>
-        <div className="flex-[1.6] h-full space-y-3">
+        <div className="flex-[1.41] h-full space-y-3">
           <Image
             src={gallery2}
             alt="gallery"
-            className=" object-cover w-full h-[300px] rounded object-top "
+            className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-top "
           />
           <div className=" flex flex-col md:flex-row gap-3">
             <Image
               src={gallery3}
               alt="gallery"
-              className=" object-cover w-full h-[300px] rounded object-center"
+              className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-center"
             />
             <Image
               src={gallery4}
               alt="gallery"
-              className=" object-cover w-full h-[300px] rounded object-center"
+              className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-center"
             />
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between gap-3 px-5">
-        <div className="flex-[1.6]">
+      <div className="flex flex-col md:flex-row justify-between gap-3">
+        <div className="flex-[1.41]">
           <Image
             src={gallery5}
             alt="gallery"
-            className=" object-cover w-full h-[300px] rounded object-center"
+            className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-center"
           />
         </div>
         <div className="flex-[1]">
           <Image
             src={gallery6}
             alt="gallery"
-            className=" object-cover w-full h-[300px] rounded object-top"
+            className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-top"
           />
         </div>
       </div>
