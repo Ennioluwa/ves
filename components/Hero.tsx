@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <div className="relative text-white">
       <div className=" -z-10">
-        <img
+        <Image
           className=" -z-10 h-full w-full  min-h-[70vh] filter: brightness-50 object-cover max-h-[100vh]"
-          src="/princify-8.png"
+          src={heroImage}
           alt={"hero image"}
         />
       </div>
