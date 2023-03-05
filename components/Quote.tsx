@@ -5,14 +5,14 @@ import arrow from "../public/rarr.png";
 
 const Quote = () => {
   return (
-    <div className="container mx-auto px-5 mt-20 md:mt-[144px]">
+    <div className="container max-w-7xl mx-auto px-5 mt-20 md:mt-[144px]">
       <h3 className=" font-bold sm:text-3xl text-xl lg:text-[36px] lg:leading-[48px] text-center mb-20">
         We commit to making every moment unforgettable - <br /> capturing
         memories and turning them into stories
       </h3>
       <div className="flex gap-10 lg:gap-[110px] flex-col md:flex-row justify-between items-center">
         <div className=" flex flex-col gap-[24px] flex-1 order-2 md:order-1 text-[16px] leading-[24px] text-[#535353]">
-          <p className=" font-bold text-[16px] leading-[24px] ">
+          <p className=" font-bold ">
             We specialize in creating unforgettable experiences for any
             occasion. Whether you're planning a corporate event, wedding,
             conference, or birthday party, we're here to help you bring your

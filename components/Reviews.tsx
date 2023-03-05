@@ -5,7 +5,7 @@ import { reviews } from "../data/reviews";
 const Reviews = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="container mx-auto text-center px-5 mt-20 md:mt-[144px]">
+    <div className="container max-w-7xl mx-auto text-center px-5 mt-20 md:mt-[144px]">
       <h6 className="leading-[24px] text-[16px] font-medium text-[#6E796F] mb-[16px]">
         REVIEWS
       </h6>

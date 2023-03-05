@@ -8,7 +8,7 @@ import gallery6 from "../public/princify-7.png";
 
 const PastEvents = () => {
   return (
-    <div className=" px-5 container mx-auto mt-20 md:mt-[144px] ">
+    <div className=" px-5 container max-w-7xl mx-auto mt-20 md:mt-[144px] ">
       <h6 className="leading-[24px] text-[16px] font-medium text-[#6E796F] mb-[16px]">
         PAST EVENTS
       </h6>

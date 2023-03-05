@@ -3,12 +3,12 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className=" container mx-auto absolute top-0 left-0 right-0 w-full p-10 xl:p-[48px] flex justify-between items-center z-10 text-white">
+    <div className=" container mx-auto max-w-7xl absolute top-0 left-0 right-0 w-full p-5 xl:p-[48px] flex justify-between items-center z-10 text-white">
       {/* <button className="block md:hidden"></button> */}
-      <h1 className=" text-3xl h-16 w-32 lg:h-[96px] lg:w-[250px] grid place-items-center bg-gray-300 rounded-lg ">
+      <h1 className=" text-3xl h-16 w-32 lg:h-[56px] lg:w-[250px] grid place-items-center bg-gray-300 rounded-lg ">
         Logo
       </h1>
-      <ul className=" md:flex gap-5 lg:gap-10 xl:gap-[32px] items-center hidden xl:text-[24px] leading-[32px]">
+      <ul className=" md:flex gap-5 lg:gap-10 xl:gap-[32px] items-center hidden xl:text-[16px] leading-[24px]">
         <li>
           <Link href="/services">Services</Link>
         </li>
