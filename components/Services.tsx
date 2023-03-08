@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="container max-w-7xl mx-auto px-5 mt-20 md:mt-[144px]">
+    <div className="xl:max-w-7xl mx-auto px-5 sm:px-10 mt-20 md:mt-[144px]">
       <h6 className="leading-[24px] text-[16px] font-medium text-[#6E796F] mb-[16px]">
         OUR SERVICES
       </h6>

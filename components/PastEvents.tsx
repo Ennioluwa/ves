@@ -1,6 +1,6 @@
 import Image from "next/image";
-import gallery1 from "../public/princify-6.png";
-import gallery2 from "../public/princify-3.png";
+import gallery1 from "../public/princify-9.png";
+import gallery2 from "../public/princify-10.png";
 import gallery3 from "../public/princify-5.png";
 import gallery4 from "../public/princify-4.png";
 import gallery5 from "../public/princify-2.png";
@@ -8,7 +8,7 @@ import gallery6 from "../public/princify-7.png";
 
 const PastEvents = () => {
   return (
-    <div className=" px-5 container max-w-7xl mx-auto mt-20 md:mt-[144px] ">
+    <div className=" px-5 sm:px-10  xl:max-w-7xl mx-auto mt-20 md:mt-[144px] ">
       <h6 className="leading-[24px] text-[16px] font-medium text-[#6E796F] mb-[16px]">
         PAST EVENTS
       </h6>

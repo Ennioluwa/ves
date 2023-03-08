@@ -21,8 +21,10 @@ const Hero = () => {
           <br /> event shop
         </p>
       </div>
+      <div className=" absolute top-0 left-0 right-0 w-full ">
+        <Navbar />
+      </div>
 
-      <Navbar />
       {/* <div className=" w-full h-full bg-yellow-50"></div> */}
     </div>
   );

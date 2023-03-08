@@ -1,7 +1,13 @@
-import React from "react";
+import { Footer, Navbar, ServicePage } from "../components";
 
 const services = () => {
-  return <div>services</div>;
+  return (
+    <div className=" min-h-screen min-w-full">
+      <Navbar text="services" />
+      <ServicePage />
+      <Footer />
+    </div>
+  );
 };
 
 export default services;

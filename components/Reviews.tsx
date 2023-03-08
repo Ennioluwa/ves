@@ -5,7 +5,7 @@ import { reviews } from "../data/reviews";
 const Reviews = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="container max-w-7xl mx-auto text-center px-5 mt-20 md:mt-[144px]">
+    <div className=" xl:max-w-7xl mx-auto text-center px-5 sm:px-10 mt-20 md:mt-[144px]">
       <h6 className="leading-[24px] text-[16px] font-medium text-[#6E796F] mb-[16px]">
         REVIEWS
       </h6>
@@ -49,19 +49,19 @@ const Reviews = () => {
           ></button>
         ))}
       </div>
-      <div className=" relative">
+      <div className=" relative -mb-28 md:-mb-[204px] ">
         <Image
           src={bridePicture}
           alt="bride picture"
-          className=" object-cover w-full brightness-50 h-[200px] lg:h-[480px] mt-20 md:mt-[144px] object-center rounded-lg"
+          className=" object-cover w-full brightness-50 h-[200px] md:h-[300px] lg:h-[480px] mt-20 md:mt-[144px] object-center rounded-lg"
         />
         <div className="absolute top-0 left-0 right-0 w-full h-full flex items-center">
           <div className="flex text-white text-left items-center gap-[16px]">
-            <h3 className="ml-5 md:ml-[40px]  font-extrabold text-4xl leading-[50px] lg:text-[121.5px] lg:leading-[128px]">
+            <h3 className="ml-5 sm:ml-[40px]  font-extrabold text-4xl leading-[50px] md:text-[80px] md:leading-[90px] lg:text-[121.5px] lg:leading-[128px]">
               Everything <br />
               event for you
             </h3>
-            <button className="hidden lg:block">
+            <button className="hidden md:block">
               <svg
                 width="200"
                 height="200"
@@ -75,7 +75,7 @@ const Reviews = () => {
                 />
               </svg>
             </button>
-            <button className=" lg:hidden h-10 w-10 border-4 border-[#DF4D31] text-[#DF4D31] text-3xl rounded-full grid place-items-center">
+            <button className=" md:hidden h-10 w-10 border-4 border-[#DF4D31] text-[#DF4D31] text-3xl rounded-full grid place-items-center">
               &rarr;
             </button>
           </div>

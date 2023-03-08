@@ -1,7 +1,13 @@
-import React from "react";
+import { Footer, Gallery, Navbar } from "../components";
 
 const gallery = () => {
-  return <div>gallery</div>;
+  return (
+    <div className=" min-h-screen min-w-full">
+      <Navbar text="gallery" />
+      <Gallery />
+      <Footer />
+    </div>
+  );
 };
 
 export default gallery;

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.contact-header {
+    @apply text-5xl sm:text-7xl sm:leading-[78px] md:text-[81px] md:leading-[88px] font-extrabold mb-6
+}
+.contact-input {
+    @apply outline-none ring-0 placeholder-[#A7AEA8] text-black p-4 rounded-lg border focus:border focus:border-black
+}
+.nav-links {
+    @apply hover:text-primary
+}
