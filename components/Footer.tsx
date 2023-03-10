@@ -3,6 +3,8 @@ import twitter from "../public/twitter.png";
 import youtube from "../public/youtube.png";
 import behance from "../public/behance.png";
 import Image from "next/image";
+import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,8 +22,12 @@ const Footer = () => {
         </ul>
         <ul className="flex-1 space-y-2 text-[16px] leading-[24px]">
           <li className=" mb-2 text-[24px] leading-[32px]">Company</li>
-          <li>About Us</li>
-          <li>Blog</li>
+          <li>
+            <Link href={"/company"}>About Us</Link>
+          </li>
+          <li>
+            <Link href={"/blog"}>Blog</Link>
+          </li>
         </ul>
         <ul className="flex-1 space-y-2 text-[16px] leading-[24px] ">
           <li className=" mb-2 text-[24px] leading-[32px]">Need Help?</li>
@@ -31,18 +37,30 @@ const Footer = () => {
       </div>
 
       <div className="flex gap-4">
-        <i className=" h-[32px] w-[32px] rounded-full bg-white ">
-          <Image src={instagram} alt="instagram" />
-        </i>
-        <i className=" h-[32px] w-[32px] rounded-full bg-white ">
-          <Image src={twitter} alt="twitter" />
-        </i>
-        <i className=" h-[32px] w-[32px] rounded-full bg-white ">
-          <Image src={behance} alt="behance" />
-        </i>
-        <i className=" h-[32px] w-[32px] rounded-full bg-white ">
-          <Image src={youtube} alt="instagram" />
-        </i>
+        <Link
+          href={"https://facebook.com"}
+          className=" h-[32px] w-[32px] rounded-full bg-white grid place-items-center text-[#222823] "
+        >
+          <FaFacebookF className="relative top-1 h-5 w-5" />
+        </Link>
+        <Link
+          href={"https://instagram.com"}
+          className=" h-[32px] w-[32px] rounded-full bg-white grid place-items-center text-[#222823] "
+        >
+          <FaInstagram className="relative h-5 w-5" />
+        </Link>
+        <Link
+          href={"https://twitter.com"}
+          className=" h-[32px] w-[32px] rounded-full bg-white grid place-items-center text-[#222823] "
+        >
+          <FaTwitter className="relative h-5 w-5" />
+        </Link>
+        <Link
+          href={"https://youtube.com"}
+          className=" h-[32px] w-[32px] rounded-full bg-white grid place-items-center text-[#222823] "
+        >
+          <FaYoutube className="relative h-5 w-5" />
+        </Link>
       </div>
 
       <div className=" border-b border-white"></div>

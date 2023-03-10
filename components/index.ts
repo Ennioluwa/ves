@@ -9,3 +9,4 @@ export { default as ServicePage } from "./ServicePage";
 export { default as Gallery } from "./Gallery";
 export { default as Contact } from "./Contact";
 export { default as Company } from "./Company";
+export { default as Blog } from "./Blog";

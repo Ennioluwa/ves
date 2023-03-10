@@ -25,11 +25,21 @@ const PastEvents = () => {
           />
         </div>
         <div className="flex-[1.41] h-full space-y-3">
-          <Image
-            src={gallery2}
-            alt="gallery"
-            className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-top "
-          />
+          <div className=" relative">
+            <Image
+              src={gallery2}
+              alt="gallery"
+              className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-top "
+            />
+            <div className="flex flex-col justify-end p-10 absolute inset-0 hover:bg-primary hover:opacity-[0.88] z-20 rounded-lg text-transparent hover:text-white">
+              <p>Frame 12360</p>
+              <p className=" text-[54px] leading-[64px] mb-2 font-extrabold ">
+                Christianna &<br />
+                Palmer Wedding
+              </p>
+              <p className=" text-5xl">&rarr;</p>
+            </div>
+          </div>
           <div className=" flex flex-col md:flex-row gap-3">
             <Image
               src={gallery3}

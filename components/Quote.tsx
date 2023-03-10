@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import quoteImage from "../public/princify-7.png";
 import arrow from "../public/rarr.png";
@@ -25,33 +26,35 @@ const Quote = () => {
             entertainment, and more. From concept to execution, we make your
             vision a reality
           </p>
-          <button className="px-[47.5px] h-[56px] flex items-center bg-[#DF4D31] rounded-lg text-[16px] leading-[24px] self-start text-white ">
-            Get a Quote
-            <span className=" w-[20px] h-[20px] ml-[10px] text-xl align-baseline ">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.83334 10H17.1667"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M12.1667 5L17.1667 10L12.1667 15"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </span>
-          </button>
+          <Link href={"/contact#quote"}>
+            <button className="px-[47.5px] h-[56px] flex items-center bg-[#DF4D31] rounded-lg text-[16px] leading-[24px] self-start text-white ">
+              Get a Quote
+              <span className=" w-[20px] h-[20px] ml-[10px] text-xl align-baseline ">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.83334 10H17.1667"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M12.1667 5L17.1667 10L12.1667 15"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+          </Link>
         </div>
         <div className=" flex-1 order-1 md:order-2">
           <Image
