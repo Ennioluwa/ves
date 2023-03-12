@@ -31,7 +31,7 @@ const Blog = ({ post, otherPosts }: Props) => {
           />
         </div>
 
-        <div className=" flex gap-10 lg:gap-[104px] max-w-[1020px] mx-auto">
+        <div className=" flex flex-col md:flex-row gap-10 lg:gap-[104px] max-w-[1020px] mx-auto">
           <div className="flex-1">
             <div className="flex items-center gap-2">
               <Image
@@ -47,7 +47,23 @@ const Blog = ({ post, otherPosts }: Props) => {
               </div>
             </div>
           </div>
-          <div className="flex-[2] bg-gray-400 h-80"></div>
+          <div className="flex-[2] flex flex-col gap-10 ">
+            {post.content.map((value, i) => (
+              <div key={i} className="text-[#535353]">
+                {value.type === "header" && (
+                  <h2 className=" font-bold text-black">{value.text}</h2>
+                )}
+                {value.type === "list" &&
+                  value.text.map((text, j) => (
+                    <div key={j} className="space-x-1">
+                      <span>{j + 1}.</span>
+                      <span>{text}</span>
+                    </div>
+                  ))}
+                {value.type === "footer" && <h2>{value.text}</h2>}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

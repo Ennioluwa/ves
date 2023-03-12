@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { EverythingEvent, Footer, Gallery, Navbar } from "../components";
-import heroImage from "../public/princify-8.png";
+import { EverythingEvent, Footer, Gallery, Navbar } from "../../components";
+import heroImage from "../../public/princify-8.png";
 
 const gallery = () => {
   return (
@@ -29,7 +29,7 @@ const gallery = () => {
         {/* <div className=" w-full h-full bg-yellow-50"></div> */}
       </div>
       <Gallery />
-      <div className=" xl:max-w-7xl container mx-auto mt-20 px-5 sm:px-10 ">
+      <div className=" xl:max-w-7xl container mx-auto mt-20 ">
         <EverythingEvent />
       </div>
       <Footer />

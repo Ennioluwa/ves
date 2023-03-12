@@ -13,23 +13,35 @@ const Company = () => {
         <p className=" self-center bg-[#F0F0F0] text-black py-1 px-4 border-l-4 border-primary rounded-lg ">
           Events Planning
         </p>
-        <h3 className="header">
-          10 Unique Venue Ideas for Your Next Corporate Event
-        </h3>
+        <Link
+          href={`/company/10-unique-venue-ideas-for-your-next-corporate-event`}
+        >
+          <h3 className="header">
+            10 Unique Venue Ideas for Your Next Corporate Event
+          </h3>
+        </Link>
         <p className=" flex items-center justify-center gap-3 text">
           <span>March 11, 2023</span>
           <span className=" h-2 w-2 rounded-full bg-black"></span>
           <span>2 Mins Read</span>
         </p>
       </div>
-      <Image
-        src={quoteImage}
-        alt="quote image"
-        className=" w-[100vw] hover:scale-105 duration-700 object-cover rounded-lg h-[250px] sm:h-[400px]  mb-[104px] "
-      />
+      <Link
+        href={`/company/10-unique-venue-ideas-for-your-next-corporate-event`}
+      >
+        <Image
+          src={quoteImage}
+          alt="quote image"
+          className=" w-[100vw] hover:scale-105 duration-700 object-cover rounded-lg h-[250px] sm:h-[400px]  mb-[104px] "
+        />
+      </Link>
+
       <div className=" flex flex-col gap-20 sm:gap-[104px] max-w-[1020px] mx-auto">
         {posts.map((post, i) => {
-          if (post.slug === "wedding-trends-for-2023") return;
+          if (
+            post.slug === "10-unique-venue-ideas-for-your-next-corporate-event"
+          )
+            return;
           return (
             <div
               key={i}
@@ -49,7 +61,10 @@ const Company = () => {
                 <p className=" self-start bg-[#F0F0F0] text-black py-1 px-4 border-l-4 border-primary rounded-lg">
                   {post.name}
                 </p>
-                <h3 className="header-small line-clamp-3">{post.title}</h3>
+                <Link href={`/company/${post.slug}`}>
+                  {" "}
+                  <h3 className="header-small line-clamp-3">{post.title}</h3>
+                </Link>
                 <p className=" flex items-center  gap-3">
                   <span>{post.date}</span>
                   <span className=" h-2 w-2 rounded-full bg-black"></span>

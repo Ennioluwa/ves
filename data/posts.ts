@@ -1,12 +1,37 @@
 export const posts = [
   {
     name: "Events Planning",
-    title: "10 Unique Venue Ideas for Your Next Corporation Event",
-    slug: "wedding-trends-for-2023",
+    title: "10 Unique Venue Ideas for Your Next Corporate Event",
+    slug: "10-unique-venue-ideas-for-your-next-corporate-event",
     image: "/princify-7.png",
     date: "March 11, 2023",
     time: "2",
     author: "Valerie Francis",
+    content: [
+      {
+        type: "header",
+        text: "When planning a corporate event, the venue can make all the difference. Whether you're looking to impress clients, reward employees, or network with industry professionals, choosing the right venue is key. If you're tired of the same old hotel conference rooms and convention centers, check out these unique venue ideas for your next corporate event:",
+      },
+      {
+        type: "list",
+        text: [
+          " Rooftop Terrace - Take your event to new heights with a rooftop terrace venue. With stunning views and a one-of-a-kind atmosphere, a rooftop terrace is sure to impress.",
+          "Art Gallery - Host your event surrounded by beautiful art and creative energy. Many art galleries offer event space and can provide a unique backdrop for your corporate event.",
+          "Historic Mansion - Give your event a touch of elegance and history by hosting it in a beautifully restored historic mansion. With stunning architecture and old-world charm, a historic mansion can provide a memorable setting for your event.",
+          "Vineyard - Wine tasting and corporate events go hand in hand. Host your next event at a beautiful vineyard and enjoy stunning views, delicious wine, and a relaxing atmosphere.",
+          "Museum - Many museums offer event space and can provide a unique and educational backdrop for your corporate event. From art museums to natural history museums, the possibilities are endless.",
+          "Sports Stadium - For sports enthusiasts, hosting a corporate event at a sports stadium can be an unforgettable experience. Many stadiums offer event space and can provide tours and behind-the-scenes access for your guests.",
+          "Botanical Garden - Surround yourself with natural beauty and host your event in a botanical garden. With lush gardens, colorful flowers, and serene landscapes, a botanical garden can provide a peaceful and relaxing setting for your event.",
+          "Aquarium - Give your event an underwater theme and host it at an aquarium. With exotic sea creatures and unique exhibits, an aquarium can provide a one-of-a-kind setting for your corporate event.",
+          "Private Island - For the ultimate luxury experience, host your event on a private island. With stunning beaches, crystal-clear waters, and a secluded atmosphere, a private island can provide a truly unforgettable setting for your event.",
+          "Yacht - Set sail and host your event on a luxury yacht. With stunning views, gourmet cuisine, and a one-of-a-kind atmosphere, a yacht can provide a truly unique setting for your corporate event.",
+        ],
+      },
+      {
+        type: "footer",
+        text: "When it comes to corporate events, the venue can make all the difference. By choosing a unique and memorable venue, you can create an event that your guests will never forget. So, why settle for a boring conference room when you can host your event in one of these unique and unforgettable venues?",
+      },
+    ],
   },
   {
     name: "Events Planning",
@@ -16,6 +41,31 @@ export const posts = [
     date: "March 11, 2023",
     time: "2",
     author: "Valerie Francis",
+    content: [
+      {
+        type: "header",
+        text: "When planning a corporate event, the venue can make all the difference. Whether you're looking to impress clients, reward employees, or network with industry professionals, choosing the right venue is key. If you're tired of the same old hotel conference rooms and convention centers, check out these unique venue ideas for your next corporate event:",
+      },
+      {
+        type: "list",
+        text: [
+          " Rooftop Terrace - Take your event to new heights with a rooftop terrace venue. With stunning views and a one-of-a-kind atmosphere, a rooftop terrace is sure to impress.",
+          "Art Gallery - Host your event surrounded by beautiful art and creative energy. Many art galleries offer event space and can provide a unique backdrop for your corporate event.",
+          "Historic Mansion - Give your event a touch of elegance and history by hosting it in a beautifully restored historic mansion. With stunning architecture and old-world charm, a historic mansion can provide a memorable setting for your event.",
+          "Vineyard - Wine tasting and corporate events go hand in hand. Host your next event at a beautiful vineyard and enjoy stunning views, delicious wine, and a relaxing atmosphere.",
+          "Museum - Many museums offer event space and can provide a unique and educational backdrop for your corporate event. From art museums to natural history museums, the possibilities are endless.",
+          "Sports Stadium - For sports enthusiasts, hosting a corporate event at a sports stadium can be an unforgettable experience. Many stadiums offer event space and can provide tours and behind-the-scenes access for your guests.",
+          "Botanical Garden - Surround yourself with natural beauty and host your event in a botanical garden. With lush gardens, colorful flowers, and serene landscapes, a botanical garden can provide a peaceful and relaxing setting for your event.",
+          "Aquarium - Give your event an underwater theme and host it at an aquarium. With exotic sea creatures and unique exhibits, an aquarium can provide a one-of-a-kind setting for your corporate event.",
+          "Private Island - For the ultimate luxury experience, host your event on a private island. With stunning beaches, crystal-clear waters, and a secluded atmosphere, a private island can provide a truly unforgettable setting for your event.",
+          "Yacht - Set sail and host your event on a luxury yacht. With stunning views, gourmet cuisine, and a one-of-a-kind atmosphere, a yacht can provide a truly unique setting for your corporate event.",
+        ],
+      },
+      {
+        type: "footer",
+        text: "When it comes to corporate events, the venue can make all the difference. By choosing a unique and memorable venue, you can create an event that your guests will never forget. So, why settle for a boring conference room when you can host your event in one of these unique and unforgettable venues?",
+      },
+    ],
   },
   {
     name: "Events Planning",
@@ -25,6 +75,31 @@ export const posts = [
     date: "March 11, 2023",
     time: "2",
     author: "Valerie Francis",
+    content: [
+      {
+        type: "header",
+        text: "When planning a corporate event, the venue can make all the difference. Whether you're looking to impress clients, reward employees, or network with industry professionals, choosing the right venue is key. If you're tired of the same old hotel conference rooms and convention centers, check out these unique venue ideas for your next corporate event:",
+      },
+      {
+        type: "list",
+        text: [
+          " Rooftop Terrace - Take your event to new heights with a rooftop terrace venue. With stunning views and a one-of-a-kind atmosphere, a rooftop terrace is sure to impress.",
+          "Art Gallery - Host your event surrounded by beautiful art and creative energy. Many art galleries offer event space and can provide a unique backdrop for your corporate event.",
+          "Historic Mansion - Give your event a touch of elegance and history by hosting it in a beautifully restored historic mansion. With stunning architecture and old-world charm, a historic mansion can provide a memorable setting for your event.",
+          "Vineyard - Wine tasting and corporate events go hand in hand. Host your next event at a beautiful vineyard and enjoy stunning views, delicious wine, and a relaxing atmosphere.",
+          "Museum - Many museums offer event space and can provide a unique and educational backdrop for your corporate event. From art museums to natural history museums, the possibilities are endless.",
+          "Sports Stadium - For sports enthusiasts, hosting a corporate event at a sports stadium can be an unforgettable experience. Many stadiums offer event space and can provide tours and behind-the-scenes access for your guests.",
+          "Botanical Garden - Surround yourself with natural beauty and host your event in a botanical garden. With lush gardens, colorful flowers, and serene landscapes, a botanical garden can provide a peaceful and relaxing setting for your event.",
+          "Aquarium - Give your event an underwater theme and host it at an aquarium. With exotic sea creatures and unique exhibits, an aquarium can provide a one-of-a-kind setting for your corporate event.",
+          "Private Island - For the ultimate luxury experience, host your event on a private island. With stunning beaches, crystal-clear waters, and a secluded atmosphere, a private island can provide a truly unforgettable setting for your event.",
+          "Yacht - Set sail and host your event on a luxury yacht. With stunning views, gourmet cuisine, and a one-of-a-kind atmosphere, a yacht can provide a truly unique setting for your corporate event.",
+        ],
+      },
+      {
+        type: "footer",
+        text: "When it comes to corporate events, the venue can make all the difference. By choosing a unique and memorable venue, you can create an event that your guests will never forget. So, why settle for a boring conference room when you can host your event in one of these unique and unforgettable venues?",
+      },
+    ],
   },
   {
     name: "Events Planning",
@@ -34,6 +109,31 @@ export const posts = [
     date: "March 11, 2023",
     time: "2",
     author: "Valerie Francis",
+    content: [
+      {
+        type: "header",
+        text: "When planning a corporate event, the venue can make all the difference. Whether you're looking to impress clients, reward employees, or network with industry professionals, choosing the right venue is key. If you're tired of the same old hotel conference rooms and convention centers, check out these unique venue ideas for your next corporate event:",
+      },
+      {
+        type: "list",
+        text: [
+          " Rooftop Terrace - Take your event to new heights with a rooftop terrace venue. With stunning views and a one-of-a-kind atmosphere, a rooftop terrace is sure to impress.",
+          "Art Gallery - Host your event surrounded by beautiful art and creative energy. Many art galleries offer event space and can provide a unique backdrop for your corporate event.",
+          "Historic Mansion - Give your event a touch of elegance and history by hosting it in a beautifully restored historic mansion. With stunning architecture and old-world charm, a historic mansion can provide a memorable setting for your event.",
+          "Vineyard - Wine tasting and corporate events go hand in hand. Host your next event at a beautiful vineyard and enjoy stunning views, delicious wine, and a relaxing atmosphere.",
+          "Museum - Many museums offer event space and can provide a unique and educational backdrop for your corporate event. From art museums to natural history museums, the possibilities are endless.",
+          "Sports Stadium - For sports enthusiasts, hosting a corporate event at a sports stadium can be an unforgettable experience. Many stadiums offer event space and can provide tours and behind-the-scenes access for your guests.",
+          "Botanical Garden - Surround yourself with natural beauty and host your event in a botanical garden. With lush gardens, colorful flowers, and serene landscapes, a botanical garden can provide a peaceful and relaxing setting for your event.",
+          "Aquarium - Give your event an underwater theme and host it at an aquarium. With exotic sea creatures and unique exhibits, an aquarium can provide a one-of-a-kind setting for your corporate event.",
+          "Private Island - For the ultimate luxury experience, host your event on a private island. With stunning beaches, crystal-clear waters, and a secluded atmosphere, a private island can provide a truly unforgettable setting for your event.",
+          "Yacht - Set sail and host your event on a luxury yacht. With stunning views, gourmet cuisine, and a one-of-a-kind atmosphere, a yacht can provide a truly unique setting for your corporate event.",
+        ],
+      },
+      {
+        type: "footer",
+        text: "When it comes to corporate events, the venue can make all the difference. By choosing a unique and memorable venue, you can create an event that your guests will never forget. So, why settle for a boring conference room when you can host your event in one of these unique and unforgettable venues?",
+      },
+    ],
   },
   {
     name: "Events Planning",
@@ -43,5 +143,30 @@ export const posts = [
     date: "March 11, 2023",
     time: "2",
     author: "Valerie Francis",
+    content: [
+      {
+        type: "header",
+        text: "When planning a corporate event, the venue can make all the difference. Whether you're looking to impress clients, reward employees, or network with industry professionals, choosing the right venue is key. If you're tired of the same old hotel conference rooms and convention centers, check out these unique venue ideas for your next corporate event:",
+      },
+      {
+        type: "list",
+        text: [
+          " Rooftop Terrace - Take your event to new heights with a rooftop terrace venue. With stunning views and a one-of-a-kind atmosphere, a rooftop terrace is sure to impress.",
+          "Art Gallery - Host your event surrounded by beautiful art and creative energy. Many art galleries offer event space and can provide a unique backdrop for your corporate event.",
+          "Historic Mansion - Give your event a touch of elegance and history by hosting it in a beautifully restored historic mansion. With stunning architecture and old-world charm, a historic mansion can provide a memorable setting for your event.",
+          "Vineyard - Wine tasting and corporate events go hand in hand. Host your next event at a beautiful vineyard and enjoy stunning views, delicious wine, and a relaxing atmosphere.",
+          "Museum - Many museums offer event space and can provide a unique and educational backdrop for your corporate event. From art museums to natural history museums, the possibilities are endless.",
+          "Sports Stadium - For sports enthusiasts, hosting a corporate event at a sports stadium can be an unforgettable experience. Many stadiums offer event space and can provide tours and behind-the-scenes access for your guests.",
+          "Botanical Garden - Surround yourself with natural beauty and host your event in a botanical garden. With lush gardens, colorful flowers, and serene landscapes, a botanical garden can provide a peaceful and relaxing setting for your event.",
+          "Aquarium - Give your event an underwater theme and host it at an aquarium. With exotic sea creatures and unique exhibits, an aquarium can provide a one-of-a-kind setting for your corporate event.",
+          "Private Island - For the ultimate luxury experience, host your event on a private island. With stunning beaches, crystal-clear waters, and a secluded atmosphere, a private island can provide a truly unforgettable setting for your event.",
+          "Yacht - Set sail and host your event on a luxury yacht. With stunning views, gourmet cuisine, and a one-of-a-kind atmosphere, a yacht can provide a truly unique setting for your corporate event.",
+        ],
+      },
+      {
+        type: "footer",
+        text: "When it comes to corporate events, the venue can make all the difference. By choosing a unique and memorable venue, you can create an event that your guests will never forget. So, why settle for a boring conference room when you can host your event in one of these unique and unforgettable venues?",
+      },
+    ],
   },
 ];

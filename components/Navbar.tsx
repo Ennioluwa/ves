@@ -8,7 +8,7 @@ const Navbar = ({ text }: Props) => {
   return (
     <nav className="  p-5 sm:p-10">
       <div
-        className={`relative container mx-auto xl:max-w-7xl xl:p-[48px] flex gap-3 justify-between items-center z-10 ${
+        className={`relative container mx-auto xl:max-w-7xl flex gap-3 justify-between items-center z-10 ${
           text ? "text-black" : "text-white"
         } ${(text === "gallery" || text === "services") && "text-white"}`}
       >
@@ -68,7 +68,7 @@ const Navbar = ({ text }: Props) => {
           </button>
         )}
         {open && (
-          <ul className=" absolute inset-x-0  top-20 mt-5 ml-5 mr-5 sm:ml-auto rounded-lg p-5 flex flex-col justify-center items-center gap-5 sm:w-[300px] text-white bg-gray-400 md:hidden z-50 ">
+          <ul className=" absolute inset-x-0  top-20 mt-5 sm:ml-auto rounded-lg p-5 flex flex-col justify-center items-center gap-5 sm:w-[300px] text-white bg-gray-400 md:hidden z-50 ">
             <li
               className={`${text === "services" && "text-primary"} nav-links`}
             >

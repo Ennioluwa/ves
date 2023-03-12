@@ -24,10 +24,10 @@ const Footer = () => {
           <ul className="flex-1 space-y-2 text-[16px] leading-[24px]">
             <li className=" mb-2 text-[24px] leading-[32px]">Company</li>
             <li>
-              <Link href={"/company"}>About Us</Link>
+              <Link href={"/services"}>About Us</Link>
             </li>
             <li>
-              <Link href={"/blog"}>Blog</Link>
+              <Link href={"/company"}>Blog</Link>
             </li>
           </ul>
           <ul className="flex-1 space-y-2 text-[16px] leading-[24px] ">

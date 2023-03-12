@@ -8,7 +8,7 @@ interface Event {
 const SingleService = ({ title, content, icon, index }: Event) => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
-    if (index === 0) {
+    if (index === 2) {
       setOpen(true);
     }
   }, []);

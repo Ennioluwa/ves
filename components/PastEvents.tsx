@@ -56,19 +56,20 @@ const PastEvents = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between gap-3">
-          <div className="flex-[1.41]">
+          <div className="flex-[1.5]">
             <Image
               src={gallery5}
               alt="gallery"
               className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-center"
             />
           </div>
-          <div className="flex-[1]">
-            <Image
-              src={gallery6}
-              alt="gallery"
-              className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-top"
-            />
+          <div className="flex-[1] bg-primary flex flex-col justify-center gap-5 p-10 rounded-lg text-white">
+            <p className=" text-[54px] leading-[64px] mb-2 font-extrabold ">
+              Explore more
+              <br />
+              moments
+            </p>
+            <p className=" text-5xl">&rarr;</p>
           </div>
         </div>
       </div>

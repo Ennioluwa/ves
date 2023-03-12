@@ -6,4 +6,5 @@ interface Post {
   date: string;
   time: string;
   author: string;
+  content: { type: string; text: string[] }[];
 }
