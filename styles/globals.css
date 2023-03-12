@@ -12,7 +12,7 @@
     @apply hover:text-primary
 }
 .header {
-    @apply text-4xl md:text-5xl lg:leading-[78px] lg:text-[71px] text-[#222823] font-extrabold
+    @apply text-4xl leading-[50px] md:text-5xl md:leading-[60px]  lg:text-[71px] text-[#222823] font-extrabold
 }
 .header-small {
     @apply text-3xl sm:leading-10 lg:leading-[60px] lg:text-[50px] text-[#222823] font-extrabold

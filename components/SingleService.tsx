@@ -15,7 +15,7 @@ const SingleService = ({ title, content, icon, index }: Event) => {
   return (
     <div className="flex items-start gap-12 mb-5 ">
       <div dangerouslySetInnerHTML={{ __html: icon }} />
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 grow">
         <h4
           className=" text-4xl leading-10 font-semibold text-white"
           onClick={() => setOpen(!open)}
@@ -23,7 +23,7 @@ const SingleService = ({ title, content, icon, index }: Event) => {
           {title}
         </h4>
         {open && <p className=" text-base text-[#A7AEA8] ">{content}</p>}
-        <hr className=" text-[#535353]" />
+        <hr className=" w-full text-[#535353]" />
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { reviews } from "../data/reviews";
 import EventServices from "./EventServices";
 
 const ServicePage = () => {
+  const [index, setIndex] = useState(0);
   return (
     <section className="relative">
       <div className=" px-5 sm:px-10">
@@ -25,19 +27,25 @@ const ServicePage = () => {
                 <span className=" text-4xl lg:text-[54px] lg:leading-[64px] font-extrabold text-[#222823] ">
                   +40
                 </span>
-                <span>Events Planned</span>
+                <span className="flex flex-col xl:flex-row gap-x-1">
+                  Events <span>Planned</span>
+                </span>
               </div>
               <div className=" flex flex-1  flex-col text-md lg:text-base">
                 <span className=" text-4xl lg:text-[54px] lg:leading-[64px] font-extrabold text-[#222823]  ">
                   100%
                 </span>
-                <span>Customer Satisfaction</span>
+                <span className="flex flex-col xl:flex-row gap-x-1">
+                  Customer <span>Satisfaction</span>
+                </span>
               </div>
               <div className=" flex flex-1  flex-col">
                 <span className=" text-4xl lg:text-[54px] lg:leading-[64px] font-extrabold text-[#222823]  ">
                   +20
                 </span>
-                <span>Happy Clients</span>
+                <span className="flex flex-col xl:flex-row gap-x-1">
+                  Happy <span>Clients</span>
+                </span>
               </div>
             </div>
           </div>
@@ -57,10 +65,69 @@ const ServicePage = () => {
             help you bring it to life! We make it all possible at VES.
           </p>
           <div className="flex flex-col md:flex-row justify-between gap-10 mt-20">
-            <div className="md:flex-1 bg-white h-[400px]"></div>
+            <div className="md:flex-1 bg-white h-[400px] rounded-lg"></div>
             <div className="md:flex-1">
               <EventServices />
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="px-5 sm:px-10">
+        <div className=" mt-20 md:mt-[144px] text-center container xl:max-w-7xl mx-auto ">
+          <h6 className="leading-[24px] text-[16px] font-medium text-[#6E796F] mb-[16px]">
+            REVIEWS
+          </h6>
+          <h3 className="leading-[50px] font-extrabold text-[43px] mb-10 md:mb-20 text-[#222823] md:leading-[88px] md:text-[81px] ">
+            Our clients make <br />
+            moments matter
+          </h3>
+          <div>
+            {reviews.map((review, i) => (
+              <div
+                key={i}
+                className={`${
+                  index === i ? "block" : "hidden"
+                } w-full sm:w-2/3 mx-auto max-w-[400px] lg:max-w-[50%] min-h-[250px] sm:h-[200px] md:h-[350px] lg:h-[300px] `}
+              >
+                <p className=" text-[#535353] text-md md:text-[24px] md:leading-[32px] font-normal">
+                  {review.content}
+                </p>
+                <p className=" font-bold mt-[24px] text-[16px] leading-[24px]">
+                  {review.name}
+                </p>
+                <p className="mt-[8px] text-[12px] leading-[16px] text-[#6E796F] italic">
+                  {review.title}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="z-30 flex justify-center space-x-3 mt-[30px] ">
+            {reviews.map((review, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => setIndex(i)}
+                className={`w-6 h-6 rounded-full ${
+                  index === i
+                    ? "bg-[#DF4D31] border border-[#DF4D31]"
+                    : "border border-gray-600"
+                }`}
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className=" px-5 sm:px-10 bg-[#F0F0F0] ">
+        <div className=" mt-20 md:mt-[144px] container mx-auto xl:max-w-7xl py-20 md:py-[104px] ">
+          <h4 className=" text-center text-2xl mb-20 text-[#222823] font-bold">
+            Explore moments we've helped make
+          </h4>
+          <div className="flex gap-5 flex-col sm:flex-row">
+            <div className="sm:flex-1 h-80 bg-black rounded-lg"></div>
+            <div className="sm:flex-1 h-80 bg-black rounded-lg"></div>
           </div>
         </div>
       </div>
