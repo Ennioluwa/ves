@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="xl:max-w-7xl mx-auto px-5 sm:px-10 mt-20 md:mt-[144px]">
+    <div className="container xl:max-w-7xl mx-auto px-5 sm:px-10 mt-20 md:mt-[144px]">
       <h6 className="leading-[24px] text-[16px] font-medium text-[#6E796F] mb-[16px]">
         OUR SERVICES
       </h6>
@@ -14,9 +14,9 @@ const Services = () => {
         Discover how we <br />
         make it happen
       </h3>
-      <div className=" flex flex-col md:flex-row  md:gap-6 flex-wrap lg:flex-nowrap gap-8 items-center md:justify-between ">
+      <div className=" flex flex-col md:flex-row  md:gap-6 flex-wrap lg:flex-nowrap gap-8 md:justify-between ">
         <div className="flex flex-col md:flex-row gap-8 md:gap-6 md:justify-between">
-          <div className="flex-1 border-gray-100 border-[1px] rounded space-y-4 p-5 max-w-[400px]">
+          <div className="flex-1 border-gray-100 border-[1px] rounded space-y-4 p-5 md:max-w-[400px]">
             <Image
               src={megaphone}
               alt="megaphone"
@@ -32,7 +32,7 @@ const Services = () => {
               & more.
             </p>
           </div>
-          <div className="flex-1  border-gray-100 border-[1px] rounded space-y-4 p-5 max-w-[400px]">
+          <div className="flex-1  border-gray-100 border-[1px] rounded space-y-4 p-5 md:max-w-[400px]">
             <Image src={fluent} alt="fluent" className=" h-[72px] w-[72px]" />
             <p className=" text-[#222823] font-extrabold text-[24px] leading-[32px]">
               Event Design
@@ -45,7 +45,7 @@ const Services = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-8 md:gap-6 md:justify-between">
-          <div className="flex-1  border-gray-100 border-[1px] rounded space-y-4 p-5 max-w-[400px]">
+          <div className="flex-1  border-gray-100 border-[1px] rounded space-y-4 p-5 md:max-w-[400px]">
             <Image src={home} alt="home" className=" h-[72px] w-[72px]" />
             <p className=" text-[#222823] font-extrabold text-[24px] leading-[32px]">
               Event Location
@@ -56,7 +56,7 @@ const Services = () => {
               our team of experts will work with you to find the right venue.
             </p>
           </div>
-          <div className="flex-1  border-gray-100 border-[1px] rounded space-y-4 p-5 max-w-[400px]">
+          <div className="flex-1  border-gray-100 border-[1px] rounded space-y-4 p-5 md:max-w-[400px]">
             <Image
               src={serviceBall}
               alt="service ball"

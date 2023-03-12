@@ -4,7 +4,7 @@ import contact2 from "../public/contact-2.png";
 
 const Contact = () => {
   return (
-    <div className=" xl:max-w-7xl mx-auto px-5 sm:px-10">
+    <div className=" xl:max-w-7xl container mx-auto px-5 sm:px-10">
       <p className="mt-14 md:mt-[80px] text-xl md:text-[36px] md:leading-[48px] mb-14 md:mb-[80px] font-extrabold">
         Looking to plan your next event?
         <br />

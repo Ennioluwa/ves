@@ -11,3 +11,19 @@
 .nav-links {
     @apply hover:text-primary
 }
+.header {
+    @apply text-4xl md:text-5xl lg:leading-[78px] lg:text-[71px] text-[#222823] font-extrabold
+}
+.header-small {
+    @apply text-3xl sm:leading-10 lg:leading-[60px] lg:text-[50px] text-[#222823] font-extrabold
+}
+.text {
+    @apply font-normal text-base md:text-[24px] md:leading-[32px] text-[#535353]
+}
+.line-clamp-3 {
+    display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+}

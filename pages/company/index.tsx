@@ -1,4 +1,4 @@
-import { Company, Footer, Navbar } from "../components";
+import { Company, Footer, Navbar } from "../../components";
 
 const company = () => {
   return (

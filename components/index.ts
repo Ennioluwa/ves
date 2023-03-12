@@ -10,3 +10,7 @@ export { default as Gallery } from "./Gallery";
 export { default as Contact } from "./Contact";
 export { default as Company } from "./Company";
 export { default as Blog } from "./Blog";
+export { default as EverythingEvent } from "./EverythingEvent";
+export { default as OtherPosts } from "./OtherPosts";
+export { default as EventServices } from "./EventServices";
+export { default as SingleService } from "./SingleService";
