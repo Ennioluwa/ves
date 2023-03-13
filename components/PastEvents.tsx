@@ -5,6 +5,7 @@ import gallery3 from "../public/princify-5.png";
 import gallery4 from "../public/princify-4.png";
 import gallery5 from "../public/princify-2.png";
 import gallery6 from "../public/princify-7.png";
+import Link from "next/link";
 
 const PastEvents = () => {
   return (
@@ -18,39 +19,42 @@ const PastEvents = () => {
           we helped make
         </h3>
         <div className=" flex flex-col md:flex-row justify-between gap-3 mb-3">
-          <div className="flex-1 h-[250px] md:h-96 lg:h-[708px]">
+          <div className="relative flex-1 h-[350px] md:h-[452px] lg:grow lg:h-[708px]">
             <Image
-              src={gallery1}
+              src={gallery2}
               alt="gallery"
-              className=" object-cover w-full h-full rounded-lg object-top"
+              // style={{ objectPosition: "center 20%" }}
+              className=" object-cover w-full h-[350px]  md:h-full rounded-lg object-center-top md:object-center-left"
             />
+            <div className="flex flex-col justify-end  pl-5 xl:pl-10 pb-10 md:pb-20 lg:pb-[104px] absolute inset-0 hover:bg-primary hover:opacity-[0.88] z-20 rounded-lg text-transparent hover:text-white">
+              {/* <p>Frame 12360</p> */}
+              <p className=" text-6xl md:text-4xl lg:text-5xl lg:mb-2 font-extrabold tracking-tight">
+                Christianna &<br />
+                Palmer Wedding
+              </p>
+              <Link href="/gallery/christianna-and-palmer">
+                <p className=" text-5xl">&rarr;</p>
+              </Link>
+            </div>
           </div>
           <div className="flex-[1.41] h-full space-y-3">
             <div className=" relative">
               <Image
-                src={gallery2}
+                src={gallery1}
                 alt="gallery"
-                className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-top "
+                className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg object-center-top "
               />
-              <div className="flex flex-col justify-end p-10 absolute inset-0 hover:bg-primary hover:opacity-[0.88] z-20 rounded-lg text-transparent hover:text-white">
-                <p>Frame 12360</p>
-                <p className=" text-[54px] leading-[64px] mb-2 font-extrabold ">
-                  Christianna &<br />
-                  Palmer Wedding
-                </p>
-                <p className=" text-5xl">&rarr;</p>
-              </div>
             </div>
             <div className=" flex flex-col md:flex-row gap-3">
               <Image
                 src={gallery3}
                 alt="gallery"
-                className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-center"
+                className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg"
               />
               <Image
                 src={gallery4}
                 alt="gallery"
-                className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-center"
+                className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg object-center"
               />
             </div>
           </div>
@@ -60,11 +64,11 @@ const PastEvents = () => {
             <Image
               src={gallery5}
               alt="gallery"
-              className=" object-cover w-full h-[250px] md:h-[186px] lg:h-[348px] rounded-lg object-center"
+              className=" object-cover w-full h-[250px] md:h-[220px] lg:h-[348px] rounded-lg object-center"
             />
           </div>
-          <div className="flex-[1] bg-primary flex flex-col justify-center gap-5 p-10 rounded-lg text-white">
-            <p className=" text-[54px] leading-[64px] mb-2 font-extrabold ">
+          <div className="md:flex-[1] h-[250px] md:h-[220px] lg:h-[348px] bg-primary flex flex-col justify-end px-5 pb-5 lg:px-10 lg:pb-10 rounded-lg text-white">
+            <p className=" text-5xl md:text-4xl lg:text-[54px] lg:leading-[64px] mb-2 font-extrabold ">
               Explore more
               <br />
               moments

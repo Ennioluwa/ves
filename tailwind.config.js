@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         primary: "#DF4D31",
       },
+      objectPosition: {
+        "center-top": "center 20%",
+        "center-left": "35% center",
+      },
     },
   },
   plugins: [],

@@ -29,9 +29,7 @@ const OtherPosts = ({ otherPosts }: Props) => {
                   </Link>
                 </div>
                 <div className="flex-1 flex sm:text-left flex-col gap-4">
-                  <p className=" self-start bg-[#F0F0F0] text-black py-1 px-4 border-l-[6px] border-primary rounded-lg">
-                    {post.name}
-                  </p>
+                  <p className="title">{post.name}</p>
                   <Link href={`/company/${post.slug}`}>
                     <h3 className="header-small line-clamp-3">{post.title}</h3>
                   </Link>

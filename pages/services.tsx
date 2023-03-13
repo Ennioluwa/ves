@@ -33,9 +33,12 @@ const services = () => {
         </div>
       </div>
       <ServicePage />
-      <div className=" xl:max-w-7xl mx-auto mt-20 px-5 sm:px-10 ">
-        <EverythingEvent />
+      <div className=" px-5 sm:px-10">
+        <div className=" xl:max-w-7xl mx-auto container mt-20">
+          <EverythingEvent />
+        </div>
       </div>
+
       <Footer />
     </div>
   );

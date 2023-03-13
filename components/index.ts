@@ -14,3 +14,4 @@ export { default as EverythingEvent } from "./EverythingEvent";
 export { default as OtherPosts } from "./OtherPosts";
 export { default as EventServices } from "./EventServices";
 export { default as SingleService } from "./SingleService";
+export { default as IndividualGallery } from "./IndividualGallery";

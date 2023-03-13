@@ -12,13 +12,16 @@
     @apply hover:text-primary
 }
 .header {
-    @apply text-4xl leading-[50px] md:text-5xl md:leading-[60px]  lg:text-[71px] text-[#222823] font-extrabold
+    @apply text-4xl leading-[50px] md:text-5xl md:leading-[60px]  lg:text-[71px] lg:leading-[80px] font-extrabold
 }
 .header-small {
     @apply text-3xl sm:leading-10 lg:leading-[60px] lg:text-[50px] text-[#222823] font-extrabold
 }
 .text {
     @apply font-normal text-base md:text-[24px] md:leading-[32px] text-[#535353]
+}
+.title {
+    @apply self-start bg-[#F0F0F0] py-1 px-4 border-l-[6px] border-primary rounded  text-sm text-black
 }
 .line-clamp-3 {
     display: -webkit-box;

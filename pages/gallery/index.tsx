@@ -29,8 +29,10 @@ const gallery = () => {
         {/* <div className=" w-full h-full bg-yellow-50"></div> */}
       </div>
       <Gallery />
-      <div className=" xl:max-w-7xl container mx-auto mt-20 ">
-        <EverythingEvent />
+      <div className=" px-5 sm:px-10">
+        <div className=" xl:max-w-7xl mx-auto container mt-20">
+          <EverythingEvent />
+        </div>
       </div>
       <Footer />
     </div>

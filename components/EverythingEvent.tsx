@@ -7,11 +7,11 @@ const EverythingEvent = () => {
       <Image
         src={bridePicture}
         alt="bride picture"
-        className=" object-cover w-full brightness-50 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] mt-20 md:mt-[144px] object-center rounded-lg"
+        className=" object-cover w-full brightness-50 h-[200px] sm:h-[300px] md:h-[300px] lg:h-[480px] mt-20 md:mt-[144px] object-center rounded-lg"
       />
       <div className="absolute top-0 left-0 right-0 w-full h-full flex items-center">
-        <div className="flex text-white text-left items-center gap-[16px]">
-          <h3 className="ml-5 sm:ml-[40px]  font-extrabold text-4xl leading-[50px] md:text-[70px] md:leading-[90px] lg:text-[100.5px] lg:leading-[108px]">
+        <div className="flex text-white text-left items-center gap-10 md:gap-4">
+          <h3 className="ml-5 sm:ml-[40px]  font-extrabold text-4xl leading-[40px] sm:text-6xl md:text-[70px] md:leading-[90px] lg:text-[100.5px] lg:leading-[108px]">
             Everything <br />
             event for you
           </h3>
@@ -29,7 +29,7 @@ const EverythingEvent = () => {
               />
             </svg>
           </button>
-          <button className=" md:hidden h-10 w-10 border-4 border-[#DF4D31] text-[#DF4D31] text-3xl rounded-full grid place-items-center">
+          <button className=" md:hidden h-14 w-14  sm:h-20 sm:w-20 border-[5px] border-[#DF4D31] text-[#DF4D31] text-5xl sm:text-6xl rounded-full grid place-items-center">
             &rarr;
           </button>
         </div>
