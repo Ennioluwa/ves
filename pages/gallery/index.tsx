@@ -13,7 +13,6 @@ const gallery = () => {
             src={heroImage}
             alt={"hero image"}
             priority
-            quality={30}
           />
         </div>
         <div className=" absolute inset-0 w-full h-full grid place-items-center">
