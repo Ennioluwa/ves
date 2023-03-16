@@ -1,6 +1,6 @@
 import Image from "next/image";
-import contact1 from "../public/contact-1.png";
-import contact2 from "../public/contact-2.png";
+import contact1 from "../public/gallery/img21.png";
+import contact2 from "../public/gallery/img22.png";
 
 const Contact = () => {
   return (
@@ -13,9 +13,10 @@ const Contact = () => {
         </p>
         <div className="flex flex-col md:flex-row md:items-center gap-10 lg:gap-[110px] rounded-lg">
           <Image
+            quality={30}
             src={contact2}
             alt="contact 1"
-            className=" md:flex-1 order-2 md:order-1 h-96 md:h-[560px] rounded-lg object-cover object-center"
+            className=" md:flex-1 md:w-1/2 order-2 md:order-1 h-96 md:h-[560px] rounded-lg object-cover object-center-top"
           />
           <div className="md:flex-1 order-1 md:order-2">
             <p className="contact-header">Our digits</p>
@@ -32,7 +33,7 @@ const Contact = () => {
           <h3 className="contact-header md:mt-[144px] mt-20 mb-[80px] md:pl-4">
             Get a Free Quote
           </h3>
-          <div className="flex gap-10 lg:gap-[104px] flex-col md:flex-row">
+          <div className="flex gap-10 lg:gap-[104px] flex-col md:flex-row md:items-center">
             <div className="md:flex-1 order-2 md:order-1">
               <form className=" flex flex-col gap-[32px] text-[16px] leading-[24px]">
                 <div className=" flex flex-col gap-2">
@@ -103,9 +104,10 @@ const Contact = () => {
               </form>
             </div>
             <Image
+              quality={30}
               src={contact1}
               alt="contact 2"
-              className=" hidden md:block md:flex-1 order-1 md:order-2 h-96 md:h-[560px] rounded-lg object-cover"
+              className=" hidden md:block md:flex-1 md:w-1/2 order-1 md:order-2 h-96 md:h-[560px] rounded-lg object-cover"
             />
           </div>
         </section>

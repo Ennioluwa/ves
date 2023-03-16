@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { EverythingEvent, Footer, Gallery, Navbar } from "../../components";
-import heroImage from "../../public/princify-8.png";
+import heroImage from "../../public/gallery/img19.png";
 
 const gallery = () => {
   return (
@@ -8,6 +8,7 @@ const gallery = () => {
       <div className="relative text-white">
         <div className=" -z-10">
           <Image
+            quality={30}
             className=" -z-10 w-full brightness-50 object-cover min-h-[60vh]"
             src={heroImage}
             alt={"hero image"}

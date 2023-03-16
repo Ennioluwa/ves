@@ -1,6 +1,9 @@
+import Image from "next/image";
 import React, { useState } from "react";
 import { reviews } from "../data/reviews";
 import EventServices from "./EventServices";
+import gallery1 from "../public/gallery/img13.png";
+import gallery2 from "../public/gallery/img17.png";
 
 const ServicePage = () => {
   const [index, setIndex] = useState(0);
@@ -126,8 +129,22 @@ const ServicePage = () => {
             Explore moments we've helped make
           </h4>
           <div className="flex gap-5 flex-col sm:flex-row">
-            <div className="sm:flex-1 h-80 bg-black rounded-lg"></div>
-            <div className="sm:flex-1 h-80 bg-black rounded-lg"></div>
+            <div className="sm:flex-1 bg-black rounded-lg w-full">
+              <Image
+                quality={30}
+                src={gallery1}
+                alt="service image"
+                className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "
+              />
+            </div>
+            <div className="sm:flex-1 bg-black rounded-lg w-full">
+              <Image
+                quality={30}
+                src={gallery2}
+                alt="service image"
+                className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "
+              />
+            </div>
           </div>
         </div>
       </div>

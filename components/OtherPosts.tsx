@@ -21,6 +21,7 @@ const OtherPosts = ({ otherPosts }: Props) => {
                 <div className="relative sm:flex-1 w-full h-[250px]">
                   <Link href={`/company/${post.slug}`}>
                     <Image
+                      quality={30}
                       src={post.image}
                       alt={post.name}
                       fill

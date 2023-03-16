@@ -7,19 +7,19 @@ import {
   Navbar,
 } from "../../components";
 import { galleryPages } from "../../data/gallery";
-import heroImage from "../../public/princify-8.png";
 
 const gallery = (props: Gallery) => {
   return (
     <div className=" flex flex-col">
       <div className="relative text-white">
-        <div className=" -z-10">
+        <div className="relative -z-10 min-h-[60vh] md:h-screen w-full h-auto">
           <Image
-            className=" -z-10 w-full brightness-50 object-cover min-h-[60vh]"
-            src={heroImage}
-            alt={"hero image"}
-            priority
             quality={30}
+            className=" -z-10 w-full brightness-50 object-cover"
+            src={props.heroImage}
+            alt={"hero image"}
+            fill
+            priority
           />
         </div>
         <div className=" absolute inset-0 w-full h-full grid place-items-center">

@@ -1,10 +1,9 @@
 import Image from "next/image";
-import gallery1 from "../public/princify-9.png";
-import gallery2 from "../public/princify-10.png";
-import gallery3 from "../public/princify-5.png";
-import gallery4 from "../public/princify-4.png";
-import gallery5 from "../public/princify-2.png";
-import gallery6 from "../public/princify-7.png";
+import gallery1 from "../public/gallery/img17.png";
+import gallery2 from "../public/gallery/img13.png";
+import gallery3 from "../public/gallery/img16.png";
+import gallery4 from "../public/gallery/img15.png";
+import gallery5 from "../public/gallery/img14.png";
 import Link from "next/link";
 
 const PastEvents = () => {
@@ -21,6 +20,7 @@ const PastEvents = () => {
         <div className=" flex flex-col md:flex-row justify-between gap-3 mb-3">
           <div className="relative flex-1 h-[350px] md:h-[452px] lg:grow lg:h-[708px]">
             <Image
+              quality={30}
               src={gallery2}
               alt="gallery"
               // style={{ objectPosition: "center 20%" }}
@@ -40,6 +40,7 @@ const PastEvents = () => {
           <div className="flex-[1.41] h-full space-y-3">
             <div className=" relative">
               <Image
+                quality={30}
                 src={gallery1}
                 alt="gallery"
                 className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg object-center-top "
@@ -47,14 +48,16 @@ const PastEvents = () => {
             </div>
             <div className=" flex flex-col md:flex-row gap-3">
               <Image
+                quality={30}
                 src={gallery3}
                 alt="gallery"
-                className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg"
+                className=" object-cover w-full md:w-1/2 h-[350px] md:h-[220px] lg:h-[348px] rounded-lg"
               />
               <Image
+                quality={30}
                 src={gallery4}
                 alt="gallery"
-                className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg object-center"
+                className=" object-cover w-full md:w-1/2 h-[350px] md:h-[220px] lg:h-[348px] rounded-lg object-center-top"
               />
             </div>
           </div>
@@ -62,6 +65,7 @@ const PastEvents = () => {
         <div className="flex flex-col md:flex-row justify-between gap-3">
           <div className="flex-[1.5]">
             <Image
+              quality={30}
               src={gallery5}
               alt="gallery"
               className=" object-cover w-full h-[250px] md:h-[220px] lg:h-[348px] rounded-lg object-center"
@@ -73,7 +77,9 @@ const PastEvents = () => {
               <br />
               moments
             </p>
-            <p className=" text-5xl">&rarr;</p>
+            <Link href="/gallery">
+              <p className=" text-5xl">&rarr;</p>
+            </Link>
           </div>
         </div>
       </div>

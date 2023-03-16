@@ -24,6 +24,7 @@ const IndividualGallery = ({
             <div className=" flex flex-col md:flex-row gap-5 ">
               <div className="relative md:flex-[2]  h-[350px] md:h-[220px] lg:h-[348px]">
                 <Image
+                  quality={30}
                   src={images[0]}
                   alt="gallery"
                   fill
@@ -32,17 +33,19 @@ const IndividualGallery = ({
               </div>
               <div className="relative md:flex-1  h-[350px] md:h-[220px] lg:h-[348px]">
                 <Image
-                  src={images[0]}
+                  quality={30}
+                  src={images[1]}
                   alt="gallery"
                   fill
-                  className=" rounded-lg object-cover"
+                  className=" rounded-lg object-cover object-center-top"
                 />
               </div>
             </div>
             <div className=" flex flex-col md:flex-row gap-5">
               <div className="relative md:flex-1  h-[350px] md:h-[220px] lg:h-[348px]">
                 <Image
-                  src={images[0]}
+                  quality={30}
+                  src={images[2]}
                   alt="gallery"
                   fill
                   className=" rounded-lg object-cover"
@@ -50,7 +53,8 @@ const IndividualGallery = ({
               </div>
               <div className="relative md:flex-1  h-[350px] md:h-[220px] lg:h-[348px]">
                 <Image
-                  src={images[0]}
+                  quality={30}
+                  src={images[3]}
                   alt="gallery"
                   fill
                   className=" rounded-lg object-cover"
@@ -59,10 +63,11 @@ const IndividualGallery = ({
             </div>
             <div className="relative  h-[350px] md:h-[220px] lg:h-[348px] -mb-5">
               <Image
-                src={images[0]}
+                quality={30}
+                src={images[4]}
                 alt="gallery"
                 fill
-                className=" rounded-lg object-cover"
+                className=" rounded-lg object-cover object-center-top"
               />
             </div>
           </div>

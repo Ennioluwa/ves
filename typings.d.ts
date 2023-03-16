@@ -9,6 +9,7 @@ interface Post {
   content: { type: string; text: string[] }[];
 }
 interface Gallery {
+  heroImage: string;
   title: string;
   header: string;
   slug: string;

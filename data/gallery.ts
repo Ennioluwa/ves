@@ -1,5 +1,6 @@
 export const galleryPages: Gallery[] = [
   {
+    heroImage: "/gallery/img13.png",
     title: "Wedding",
     header: "Christianna and Palmer's Wedding",
     slug: "christianna-and-palmer",
@@ -9,11 +10,11 @@ export const galleryPages: Gallery[] = [
       `Throughout the planning process and on the day of the wedding, VES was always there for Christianna and Palmer, making sure that all was perfect. The couple was able to relax and enjoy their special day, knowing that everything was being taken care of.`,
     ],
     images: [
-      "/princify-7.png",
-      "/princify-7.png",
-      "/princify-7.png",
-      "/princify-7.png",
-      "/princify-7.png",
+      "/gallery/img12.png",
+      "/gallery/img11.png",
+      "/gallery/img10.png",
+      "/gallery/img9.png",
+      "/gallery/img8.png",
     ],
     review: {
       content:
@@ -23,6 +24,7 @@ export const galleryPages: Gallery[] = [
     },
   },
   {
+    heroImage: "/gallery/img13.png",
     title: "Wedding",
     header: "Seyi and Molola Wedding",
     slug: "seyi-and-molola-wedding",
@@ -32,11 +34,11 @@ export const galleryPages: Gallery[] = [
       `Throughout the planning process and on the day of the wedding, VES was always there for Christianna and Palmer, making sure that all was perfect. The couple was able to relax and enjoy their special day, knowing that everything was being taken care of.`,
     ],
     images: [
-      "/princify-7.png",
-      "/princify-7.png",
-      "/princify-7.png",
-      "/princify-7.png",
-      "/princify-7.png",
+      "/gallery/img8.png",
+      "/gallery/img8.png",
+      "/gallery/img8.png",
+      "/gallery/img8.png",
+      "/gallery/img8.png",
     ],
     review: {
       content:
@@ -46,6 +48,7 @@ export const galleryPages: Gallery[] = [
     },
   },
   {
+    heroImage: "/gallery/img13.png",
     title: "Wedding",
     header: "Christianna and Palmer's Wedding",
     slug: "christianna-and-palmer-wedding",
@@ -55,11 +58,11 @@ export const galleryPages: Gallery[] = [
       `Throughout the planning process and on the day of the wedding, VES was always there for Christianna and Palmer, making sure that all was perfect. The couple was able to relax and enjoy their special day, knowing that everything was being taken care of.`,
     ],
     images: [
-      "/princify-7.png",
-      "/princify-7.png",
-      "/princify-7.png",
-      "/princify-7.png",
-      "/princify-7.png",
+      "/gallery/img8.png",
+      "/gallery/img8.png",
+      "/gallery/img8.png",
+      "/gallery/img8.png",
+      "/gallery/img8.png",
     ],
     review: {
       content:

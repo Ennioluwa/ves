@@ -1,10 +1,11 @@
-import bridePicture from "../public/princify-1.png";
+import bridePicture from "../public/gallery/img1.png";
 import Image from "next/image";
 
 const EverythingEvent = () => {
   return (
     <div className="container mx-auto xl:max-w-7xl relative -mb-28 md:-mb-[204px] ">
       <Image
+        quality={30}
         src={bridePicture}
         alt="bride picture"
         className=" object-cover w-full brightness-50 h-[200px] sm:h-[300px] md:h-[300px] lg:h-[480px] mt-20 md:mt-[144px] object-center rounded-lg"

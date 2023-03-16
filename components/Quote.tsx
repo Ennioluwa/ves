@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import quoteImage from "../public/princify-7.png";
-import arrow from "../public/rarr.png";
+// todo
+import quoteImage from "../public/gallery/img20.png";
 
 const Quote = () => {
   return (
@@ -59,6 +59,7 @@ const Quote = () => {
           </div>
           <div className=" flex-1 order-1 md:order-2">
             <Image
+              quality={30}
               src={quoteImage}
               alt="quote image"
               className=" w-[100vw] object-cover rounded max-h-[360px] "
