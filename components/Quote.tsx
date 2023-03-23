@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-// todo
 import quoteImage from "../public/gallery/img20.png";
 
 const Quote = () => {

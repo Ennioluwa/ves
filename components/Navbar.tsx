@@ -76,8 +76,43 @@ const Navbar = ({ text }: Props) => {
               </svg>
             </button>
           )}
-          {open && (
-            <ul className=" absolute inset-x-0  top-20 mt-5 sm:ml-auto rounded-lg p-5 flex flex-col justify-center items-center gap-5 sm:w-[300px] text-white bg-gray-400 md:hidden z-50 ">
+          {/* {open && ( */}
+          <div
+            className={` ${
+              open ? "block h-screen " : " h-0 delay-500 -translate-y-20 "
+            } fixed inset-0 overflow-hidden w-full bg-gray-400 p-5 sm:p-10 text-white md:hidden z-50 transition-[height,transform] duration-500 `}
+          >
+            <div className="flex justify-between">
+              <h1 className=" text-3xl h-16 w-32 lg:h-[56px] lg:w-[250px] grid place-items-center bg-gray-300 rounded-lg ">
+                <Link href="/">Logo</Link>
+              </h1>
+              <button
+                onClick={() => setOpen(false)}
+                className="block md:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-8 h-8"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ul
+              className={`${
+                open
+                  ? "h-auto  bottom-[50%] translate-y-[50%] w-full delay-300"
+                  : "h-0 -z-[300] -bottom-[200px]"
+              } fixed  inset-x-0 rounded-lg flex flex-col justify-center items-center gap-5 transition-[bottom,transform] duration-700 "`}
+            >
               <li
                 className={`${text === "services" && "text-primary"} nav-links`}
               >
@@ -102,7 +137,8 @@ const Navbar = ({ text }: Props) => {
                 Get Started
               </button>
             </ul>
-          )}
+          </div>
+          {/* )} */}
         </div>
       </nav>
     </>
