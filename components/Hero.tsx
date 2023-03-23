@@ -7,19 +7,19 @@ import heroImage from "../public/gallery/img14.png";
 const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const [currentTime, setCurrentTime] = useState(0);
+  // const [currentTime, setCurrentTime] = useState(0);
 
-  const handleTimeUpdate = (event: any) => {
-    const time = event.target.currentTime;
-    setCurrentTime(time);
-    if (time >= 180) {
-      event.target.pause();
-      if (videoRef?.current) {
-        videoRef.current.currentTime = 0;
-        // videoRef.current.play();
-      }
-    }
-  };
+  // const handleTimeUpdate = (event: any) => {
+  //   const time = event.target.currentTime;
+  //   setCurrentTime(time);
+  //   if (time >= 180) {
+  //     event.target.pause();
+  //     if (videoRef?.current) {
+  //       videoRef.current.currentTime = 0;
+  //       // videoRef.current.play();
+  //     }
+  //   }
+  // };
 
   useEffect(() => {
     if (videoRef.current) {
@@ -37,9 +37,10 @@ const Hero = () => {
           alt={"hero image"}
           priority
         /> */}
+        <p className=" -z-[200] fixed inset-0 w-full brightness-50 object-cover min-h-[60vh] md:min-h-screen max-h-[100vh] bg-gray-400 "></p>
         <video
           ref={videoRef}
-          onTimeUpdate={handleTimeUpdate}
+          // onTimeUpdate={handleTimeUpdate}
           autoPlay
           loop
           muted
