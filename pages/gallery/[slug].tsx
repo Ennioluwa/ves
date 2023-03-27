@@ -15,6 +15,7 @@ const gallery = (props: Gallery) => {
         <div className="relative -z-10 min-h-[60vh] md:h-screen w-full h-auto">
           <Image
             quality={30}
+            placeholder="blur"
             className=" -z-10 w-full brightness-50 object-cover"
             src={props.heroImage}
             alt={"hero image"}

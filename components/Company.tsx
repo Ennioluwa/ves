@@ -22,6 +22,7 @@ const Company = () => {
         <Link href={`company/${posts[0].slug}`}>
           <Image
             quality={30}
+            placeholder="blur"
             src={posts[0].image}
             alt={posts[0].title}
             fill
@@ -45,6 +46,7 @@ const Company = () => {
                 <Link href={`/company/${post.slug}`}>
                   <Image
                     quality={30}
+                    placeholder="blur"
                     src={post.image}
                     alt={post.name}
                     fill

@@ -22,6 +22,7 @@ const OtherPosts = ({ otherPosts }: Props) => {
                   <Link href={`/company/${post.slug}`}>
                     <Image
                       quality={30}
+                      placeholder="blur"
                       src={post.image}
                       alt={post.name}
                       fill

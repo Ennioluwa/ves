@@ -25,6 +25,7 @@ const IndividualGallery = ({
               <div className="relative md:flex-[2]  h-[350px] md:h-[220px] lg:h-[348px]">
                 <Image
                   quality={30}
+                  placeholder="blur"
                   src={images[0]}
                   alt="gallery"
                   fill
@@ -34,6 +35,7 @@ const IndividualGallery = ({
               <div className="relative md:flex-1  h-[350px] md:h-[220px] lg:h-[348px]">
                 <Image
                   quality={30}
+                  placeholder="blur"
                   src={images[1]}
                   alt="gallery"
                   fill
@@ -45,6 +47,7 @@ const IndividualGallery = ({
               <div className="relative md:flex-1  h-[350px] md:h-[220px] lg:h-[348px]">
                 <Image
                   quality={30}
+                  placeholder="blur"
                   src={images[2]}
                   alt="gallery"
                   fill
@@ -54,6 +57,7 @@ const IndividualGallery = ({
               <div className="relative md:flex-1  h-[350px] md:h-[220px] lg:h-[348px]">
                 <Image
                   quality={30}
+                  placeholder="blur"
                   src={images[3]}
                   alt="gallery"
                   fill
@@ -64,6 +68,7 @@ const IndividualGallery = ({
             <div className="relative  h-[350px] md:h-[220px] lg:h-[348px] -mb-5">
               <Image
                 quality={30}
+                placeholder="blur"
                 src={images[4]}
                 alt="gallery"
                 fill

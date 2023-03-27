@@ -59,6 +59,7 @@ const Quote = () => {
           <div className=" flex-1 order-1 md:order-2">
             <Image
               quality={30}
+              placeholder="blur"
               src={quoteImage}
               alt="quote image"
               className=" w-[100vw] object-cover rounded max-h-[360px] "

@@ -14,6 +14,7 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row md:items-center gap-10 lg:gap-[110px] rounded-lg">
           <Image
             quality={30}
+            placeholder="blur"
             src={contact2}
             alt="contact 1"
             className=" md:flex-1 md:w-1/2 order-2 md:order-1 h-96 md:h-[560px] rounded-lg object-cover object-center-top"
@@ -105,6 +106,7 @@ const Contact = () => {
             </div>
             <Image
               quality={30}
+              placeholder="blur"
               src={contact1}
               alt="contact 2"
               className=" hidden md:block md:flex-1 md:w-1/2 order-1 md:order-2 h-96 md:h-[560px] rounded-lg object-cover"

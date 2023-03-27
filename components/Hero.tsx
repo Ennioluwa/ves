@@ -30,13 +30,6 @@ const Hero = () => {
   return (
     <div className="relative text-white">
       <div className=" -z-10 w-full brightness-50 object-cover min-h-[60vh] md:min-h-screen max-h-[100vh] hero-section">
-        {/* <Image
-          quality={30}
-          className=" -z-10 w-full brightness-50 object-cover min-h-[60vh] md:min-h-screen max-h-[100vh]"
-          src={heroImage}
-          alt={"hero image"}
-          priority
-        /> */}
         <p className=" -z-[200] fixed inset-0 w-full brightness-50 object-cover min-h-[60vh] md:min-h-screen max-h-[100vh] bg-gray-400 "></p>
         <video
           ref={videoRef}
@@ -58,8 +51,6 @@ const Hero = () => {
       <div className=" absolute top-0 left-0 right-0 w-full ">
         <Navbar />
       </div>
-
-      {/* <div className=" w-full h-full bg-yellow-50"></div> */}
     </div>
   );
 };

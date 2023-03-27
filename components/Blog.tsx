@@ -25,6 +25,7 @@ const Blog = ({ post, otherPosts }: Props) => {
         <div className="relative h-[250px] sm:h-[400px] w-full  mb-[104px] ">
           <Image
             quality={30}
+            placeholder="blur"
             src={post.image}
             alt={post.name}
             fill
@@ -37,6 +38,7 @@ const Blog = ({ post, otherPosts }: Props) => {
             <div className="flex items-center gap-2">
               <Image
                 quality={30}
+                placeholder="blur"
                 src={post.image}
                 alt={post.author}
                 height={80}

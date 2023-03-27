@@ -132,6 +132,7 @@ const ServicePage = () => {
             <div className="sm:flex-1 bg-black rounded-lg w-full">
               <Image
                 quality={30}
+                placeholder="blur"
                 src={gallery1}
                 alt="service image"
                 className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "
@@ -140,6 +141,7 @@ const ServicePage = () => {
             <div className="sm:flex-1 bg-black rounded-lg w-full">
               <Image
                 quality={30}
+                placeholder="blur"
                 src={gallery2}
                 alt="service image"
                 className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "

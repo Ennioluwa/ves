@@ -9,6 +9,7 @@ const gallery = () => {
         <div className=" -z-10">
           <Image
             quality={30}
+            placeholder="blur"
             className=" -z-10 w-full brightness-50 object-cover min-h-[60vh]"
             src={heroImage}
             alt={"hero image"}

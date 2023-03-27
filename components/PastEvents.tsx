@@ -23,6 +23,7 @@ const PastEvents = () => {
           <div className="relative flex-1 h-[350px] md:h-[452px] lg:grow lg:h-[708px]">
             <Image
               quality={30}
+              placeholder="blur"
               src={gallery2}
               alt="gallery"
               // style={{ objectPosition: "center 20%" }}
@@ -52,6 +53,7 @@ const PastEvents = () => {
             <div className=" relative">
               <Image
                 quality={30}
+                placeholder="blur"
                 src={gallery1}
                 alt="gallery"
                 className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg object-center-top "
@@ -80,6 +82,7 @@ const PastEvents = () => {
               <div className="w-full md:w-1/2 h-[350px] md:h-[220px] lg:h-[348px] relative">
                 <Image
                   quality={30}
+                  placeholder="blur"
                   src={gallery3}
                   alt="gallery"
                   className=" object-cover rounded-lg h-full"
@@ -107,6 +110,7 @@ const PastEvents = () => {
               <div className="w-full md:w-1/2 h-[350px] md:h-[220px] lg:h-[348px] relative">
                 <Image
                   quality={30}
+                  placeholder="blur"
                   src={gallery4}
                   alt="gallery"
                   className=" object-cover  rounded-lg object-center-top h-full"
@@ -138,6 +142,7 @@ const PastEvents = () => {
           <div className="flex-[1.5] relative">
             <Image
               quality={30}
+              placeholder="blur"
               src={gallery5}
               alt="gallery"
               className=" object-cover w-full h-[250px] md:h-[220px] lg:h-[348px] rounded-lg object-center"
