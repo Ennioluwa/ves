@@ -15,3 +15,6 @@ export { default as OtherPosts } from "./OtherPosts";
 export { default as EventServices } from "./EventServices";
 export { default as SingleService } from "./SingleService";
 export { default as IndividualGallery } from "./IndividualGallery";
+export { default as ContactForm } from "./ContactForm";
+export { default as About } from "./About";
+export { default as AboutIcons } from "./AboutIcons";

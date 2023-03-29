@@ -1,10 +1,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import ContactForm from "./ContactForm";
 interface Props {
   text?: string;
 }
 const Navbar = ({ text }: Props) => {
   const [open, setOpen] = useState(false);
+  const [formActive, setFormActive] = useState(false);
   return (
     <>
       {open && (
@@ -13,7 +15,7 @@ const Navbar = ({ text }: Props) => {
           onClick={() => setOpen(false)}
         ></div>
       )}
-      <nav className="  p-5 sm:p-10">
+      <nav className="  p-5 sm:p-10 relative">
         <div
           className={`relative container mx-auto xl:max-w-7xl flex gap-3 justify-between items-center z-10 ${
             text ? "text-black" : "text-white"
@@ -37,7 +39,10 @@ const Navbar = ({ text }: Props) => {
             <li className={`${text === "contact" && "text-primary"} nav-links`}>
               <Link href="/contact">Contact Us</Link>
             </li>
-            <button className="xl:ml-[16px] ml-3 xl:px-[63.5px] p-5 lg:px-10  py-[16px] bg-[#DF4D31] rounded-lg text-[16px] leading-[24px] font-bold text-white ">
+            <button
+              onClick={() => setFormActive(true)}
+              className="xl:ml-[16px] ml-3 xl:px-[63.5px] p-5 lg:px-10  py-[16px] bg-[#DF4D31] rounded-lg text-[16px] leading-[24px] font-bold text-white "
+            >
               Get Started
             </button>
           </ul>
@@ -138,8 +143,18 @@ const Navbar = ({ text }: Props) => {
               </button>
             </ul>
           </div>
-          {/* )} */}
         </div>
+        {formActive && (
+          <div className=" overflow-hidden">
+            <div
+              onClick={() => setFormActive(false)}
+              className=" fixed inset-0 bg-black z-50 bg-opacity-70 w-screen h-screen overflow-hidden cursor-pointer"
+            ></div>
+            <div className=" fixed top-[5%] w-[662px] left-0 right-0 bottom-[5%] mx-auto overflow-auto h-auto max-h-[804px] z-[60] p-5 bg-white rounded-lg ">
+              <ContactForm />
+            </div>
+          </div>
+        )}
       </nav>
     </>
   );

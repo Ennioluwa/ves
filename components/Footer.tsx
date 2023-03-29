@@ -24,7 +24,7 @@ const Footer = () => {
           <ul className="flex-1 space-y-2 text-[16px] leading-[24px]">
             <li className=" mb-2 text-[24px] leading-[32px]">Company</li>
             <li>
-              <Link href={"/services"}>About Us</Link>
+              <Link href={"/about"}>About Us</Link>
             </li>
             <li>
               <Link href={"/company"}>Blog</Link>

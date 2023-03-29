@@ -4,9 +4,11 @@ import { reviews } from "../data/reviews";
 import EventServices from "./EventServices";
 import gallery1 from "../public/gallery/img13.png";
 import gallery2 from "../public/gallery/img17.png";
+import Link from "next/link";
 
 const ServicePage = () => {
   const [index, setIndex] = useState(0);
+  const [show, setShow] = useState(0);
   return (
     <section className="relative">
       <div className=" px-5 sm:px-10">
@@ -68,10 +70,7 @@ const ServicePage = () => {
             help you bring it to life! We make it all possible at VES.
           </p>
           <div className="flex flex-col md:flex-row justify-between gap-10 mt-20">
-            <div className="md:flex-1 bg-white h-[400px] rounded-lg"></div>
-            <div className="md:flex-1">
-              <EventServices />
-            </div>
+            <EventServices />
           </div>
         </div>
       </div>
@@ -129,7 +128,7 @@ const ServicePage = () => {
             Explore moments we've helped make
           </h4>
           <div className="flex gap-5 flex-col sm:flex-row">
-            <div className="sm:flex-1 bg-black rounded-lg w-full">
+            <div className="sm:flex-1 bg-black rounded-lg w-full relative">
               <Image
                 quality={30}
                 placeholder="blur"
@@ -137,8 +136,27 @@ const ServicePage = () => {
                 alt="service image"
                 className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "
               />
+              <div
+                onMouseEnter={() => setShow(1)}
+                onMouseLeave={() => setShow(0)}
+                className="flex flex-col justify-center items-center absolute p-5 inset-0 hover:bg-primary hover:bg-opacity-[0.88] z-20 rounded-lg text-transparent hover:text-white"
+              >
+                {show === 1 && (
+                  <div className=" flex flex-col gap-2 items-center">
+                    <p className=" text-4xl md:text-2xl lg:text-4xl lg:mb-2 font-extrabold tracking-tight">
+                      Christianna &<br />
+                      Palmer Wedding
+                    </p>
+                    <Link href="/gallery/christianna-and-palmer">
+                      <p className="  text-5xl h-[50px] w-[50px] rounded-full grid place-items-center text-[#611A0C] border-4 border-[#611A0C] ">
+                        &rarr;
+                      </p>
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
-            <div className="sm:flex-1 bg-black rounded-lg w-full">
+            <div className="sm:flex-1 bg-black rounded-lg w-full relative">
               <Image
                 quality={30}
                 placeholder="blur"
@@ -146,6 +164,25 @@ const ServicePage = () => {
                 alt="service image"
                 className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "
               />
+              <div
+                onMouseEnter={() => setShow(2)}
+                onMouseLeave={() => setShow(0)}
+                className="flex flex-col justify-center items-center absolute p-5 inset-0 hover:bg-primary hover:bg-opacity-[0.88] z-20 rounded-lg text-transparent hover:text-white"
+              >
+                {show === 2 && (
+                  <div className=" flex flex-col gap-2 items-center">
+                    <p className=" text-4xl md:text-2xl lg:text-4xl lg:mb-2 font-extrabold tracking-tight">
+                      Christianna &<br />
+                      Palmer Wedding
+                    </p>
+                    <Link href="/gallery/christianna-and-palmer">
+                      <p className="  text-5xl h-[50px] w-[50px] rounded-full grid place-items-center text-[#611A0C] border-4 border-[#611A0C] ">
+                        &rarr;
+                      </p>
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

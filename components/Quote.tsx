@@ -62,7 +62,7 @@ const Quote = () => {
               placeholder="blur"
               src={quoteImage}
               alt="quote image"
-              className=" w-[100vw] object-cover rounded max-h-[360px] "
+              className=" w-[100vw] object-cover rounded-lg max-h-[360px] "
             />
           </div>
         </div>

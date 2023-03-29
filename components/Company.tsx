@@ -23,6 +23,7 @@ const Company = () => {
           <Image
             quality={30}
             placeholder="blur"
+            blurDataURL="/rarr.png"
             src={posts[0].image}
             alt={posts[0].title}
             fill
@@ -47,6 +48,7 @@ const Company = () => {
                   <Image
                     quality={30}
                     placeholder="blur"
+                    blurDataURL="/rarr.png"
                     src={post.image}
                     alt={post.name}
                     fill

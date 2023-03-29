@@ -1,6 +1,7 @@
 import Image from "next/image";
 import contact1 from "../public/gallery/img21.png";
 import contact2 from "../public/gallery/img22.png";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -36,73 +37,7 @@ const Contact = () => {
           </h3>
           <div className="flex gap-10 lg:gap-[104px] flex-col md:flex-row md:items-center">
             <div className="md:flex-1 order-2 md:order-1">
-              <form className=" flex flex-col gap-[32px] text-[16px] leading-[24px]">
-                <div className=" flex flex-col gap-2">
-                  <label htmlFor="name" className=" font-bold">
-                    Name <span className=" text-primary">*</span>
-                  </label>
-                  <input
-                    id="name"
-                    type="text"
-                    required
-                    className="contact-input"
-                    placeholder="Enter your name"
-                  />
-                </div>
-                <div className=" flex flex-col gap-2">
-                  <label htmlFor="email" className=" font-bold">
-                    Email <span className=" text-primary">*</span>
-                  </label>
-                  <input
-                    id="email"
-                    type="text"
-                    required
-                    className="contact-input"
-                    placeholder="Enter your email address"
-                  />
-                </div>
-                <div className=" flex flex-col gap-2">
-                  <label htmlFor="phone" className=" font-bold">
-                    Phone <span className=" text-primary">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="phone"
-                    required
-                    className="contact-input"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-                <div className=" flex flex-col gap-2">
-                  <label htmlFor="price" className=" font-bold">
-                    Price Range <span className=" text-primary">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="price"
-                    required
-                    className="contact-input"
-                    placeholder="Enter the price range"
-                  />
-                </div>
-                <div className=" flex flex-col gap-2">
-                  <label htmlFor="event" className=" font-bold">
-                    Event Description
-                  </label>
-                  <textarea
-                    id="event"
-                    rows={5}
-                    className="contact-input"
-                    placeholder="Describe event details"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="px-[47.5px] h-[56px] flex items-center bg-[#DF4D31] rounded-lg text-[16px] leading-[24px] self-start text-white font-bold "
-                >
-                  Submit
-                </button>
-              </form>
+              <ContactForm />
             </div>
             <Image
               quality={30}
