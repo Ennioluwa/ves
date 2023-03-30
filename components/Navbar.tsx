@@ -138,7 +138,13 @@ const Navbar = ({ text }: Props) => {
               >
                 <Link href="/contact">Contact Us</Link>
               </li>
-              <button className=" px-3 py-2 bg-[#DF4D31] rounded-lg text-[16px] leading-[24px] font-bold ">
+              <button
+                onClick={() => {
+                  setOpen(false);
+                  setFormActive(true);
+                }}
+                className=" px-3 py-2 bg-[#DF4D31] rounded-lg text-[16px] leading-[24px] font-bold "
+              >
                 Get Started
               </button>
             </ul>
@@ -150,7 +156,7 @@ const Navbar = ({ text }: Props) => {
               onClick={() => setFormActive(false)}
               className=" fixed inset-0 bg-black z-50 bg-opacity-70 w-screen h-screen overflow-hidden cursor-pointer"
             ></div>
-            <div className=" fixed top-[5%] w-[662px] left-0 right-0 bottom-[5%] mx-auto overflow-auto h-auto max-h-[804px] z-[60] p-5 bg-white rounded-lg ">
+            <div className=" fixed top-[5%] md:w-[662px] left-[5%] right-[5%] bottom-[5%] mx-auto overflow-auto h-auto max-h-[804px] z-[60] p-5 bg-white rounded-lg ">
               <ContactForm />
             </div>
           </div>

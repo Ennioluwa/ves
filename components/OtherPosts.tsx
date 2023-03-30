@@ -23,6 +23,7 @@ const OtherPosts = ({ otherPosts }: Props) => {
                     <Image
                       quality={30}
                       placeholder="blur"
+                      blurDataURL="/rarr.png"
                       src={post.image}
                       alt={post.name}
                       fill

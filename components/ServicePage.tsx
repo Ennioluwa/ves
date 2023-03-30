@@ -4,6 +4,7 @@ import { reviews } from "../data/reviews";
 import EventServices from "./EventServices";
 import gallery1 from "../public/gallery/img13.png";
 import gallery2 from "../public/gallery/img17.png";
+import gallery4 from "../public/gallery/img-27.png";
 import Link from "next/link";
 
 const ServicePage = () => {
@@ -12,7 +13,7 @@ const ServicePage = () => {
   return (
     <section className="relative">
       <div className=" px-5 sm:px-10">
-        <div className=" xl:max-w-7xl container mx-auto mt-20 md:mt-[144px] flex flex-col md:flex-row items-stretch justify-between gap-10">
+        <div className=" xl:max-w-7xl container mx-auto mt-20 md:mt-[144px] flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="md:flex-1 flex flex-col gap-9 text-[#535353]">
             <h1 className=" text-4xl lg:text-[54px] lg:leading-[64px] font-extrabold text-[#222823]  ">
               Capturing moments, making stories
@@ -54,7 +55,16 @@ const ServicePage = () => {
               </div>
             </div>
           </div>
-          <div className="md:flex-1 w-full h-[400px] bg-gray-400"></div>
+          <div className="md:flex-1 w-full h-[400px] bg-gray-400 relative rounded-lg overflow-clip">
+            <Image
+              quality={30}
+              placeholder="blur"
+              className=" object-cover"
+              src={gallery4}
+              alt={"hero image"}
+              fill
+            />
+          </div>
         </div>
       </div>
 

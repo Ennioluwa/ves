@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { About, EverythingEvent, Footer, Navbar } from "../components";
-import heroImage from "../public/gallery/img10.png";
+import heroImage from "../public/gallery/about-hero.png";
 
 const about = () => {
   return (

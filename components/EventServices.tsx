@@ -2,10 +2,10 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { events } from "../data/events";
 import SingleService from "./SingleService";
-import gallery1 from "../public/gallery/img13.png";
-import gallery2 from "../public/gallery/img17.png";
-import gallery3 from "../public/gallery/img14.png";
-import gallery4 from "../public/gallery/img15.png";
+import gallery1 from "../public/gallery/img-26.png";
+import gallery2 from "../public/gallery/img-25.png";
+import gallery3 from "../public/gallery/img-24.png";
+import gallery4 from "../public/gallery/img-23.png";
 
 const EventServices = () => {
   const [active, setActive] = useState(2);

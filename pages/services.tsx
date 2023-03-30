@@ -17,7 +17,7 @@ const services = () => {
           <Image
             quality={30}
             placeholder="blur"
-            className=" -z-10 w-full brightness-50 object-cover min-h-[60vh] md:min-h-screen max-h-[100vh]"
+            className=" -z-10 w-full brightness-50 object-cover h-[60vh]"
             src={heroImage}
             alt={"hero image"}
             priority

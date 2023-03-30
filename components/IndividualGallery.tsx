@@ -26,6 +26,7 @@ const IndividualGallery = ({
                 <Image
                   quality={30}
                   placeholder="blur"
+                  blurDataURL="/rarr.png"
                   src={images[0]}
                   alt="gallery"
                   fill
@@ -36,6 +37,7 @@ const IndividualGallery = ({
                 <Image
                   quality={30}
                   placeholder="blur"
+                  blurDataURL="/rarr.png"
                   src={images[1]}
                   alt="gallery"
                   fill
@@ -48,6 +50,7 @@ const IndividualGallery = ({
                 <Image
                   quality={30}
                   placeholder="blur"
+                  blurDataURL="/rarr.png"
                   src={images[2]}
                   alt="gallery"
                   fill
@@ -58,6 +61,7 @@ const IndividualGallery = ({
                 <Image
                   quality={30}
                   placeholder="blur"
+                  blurDataURL="/rarr.png"
                   src={images[3]}
                   alt="gallery"
                   fill
@@ -69,6 +73,7 @@ const IndividualGallery = ({
               <Image
                 quality={30}
                 placeholder="blur"
+                blurDataURL="/rarr.png"
                 src={images[4]}
                 alt="gallery"
                 fill
@@ -78,20 +83,18 @@ const IndividualGallery = ({
           </div>
         </div>
       </div>
-      <div>
-        <div
-          className={` w-full text-center mt-40 sm:w-2/3 mx-auto max-w-[400px] lg:max-w-[50%] min-h-[250px] sm:h-[200px] md:h-[350px] lg:h-[300px] `}
-        >
-          <p className=" text-[#535353] text-md md:text-[24px] md:leading-[32px] font-normal">
-            {review.content}
-          </p>
-          <p className=" font-bold mt-[24px] text-[16px] leading-[24px]">
-            {review.name}
-          </p>
-          <p className="mt-[8px] text-[12px] leading-[16px] text-[#6E796F] italic">
-            {review.title}
-          </p>
-        </div>
+      <div
+        className={` w-full text-center mt-40 sm:w-2/3 mx-auto max-w-[400px] lg:max-w-[50%] min-h-[250px] sm:h-[200px] md:h-[350px] lg:h-[300px] px-5 lg:px-10 `}
+      >
+        <p className=" text-[#535353] text-md md:text-[24px] md:leading-[32px] font-normal">
+          {review.content}
+        </p>
+        <p className=" font-bold mt-[24px] text-[16px] leading-[24px]">
+          {review.name}
+        </p>
+        <p className="mt-[8px] text-[12px] leading-[16px] text-[#6E796F] italic">
+          {review.title}
+        </p>
       </div>
     </section>
   );

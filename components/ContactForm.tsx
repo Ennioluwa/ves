@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <form className=" flex flex-col gap-[32px] text-[16px] leading-[24px] text-black">
+    <form className=" flex flex-col gap-[32px] text-[16px] leading-[24px] text-black text-left">
       <div className=" flex flex-col gap-2">
         <label htmlFor="name" className=" font-bold">
           Name <span className=" text-primary">*</span>

@@ -1,7 +1,10 @@
 import bridePicture from "../public/gallery/img1.png";
 import Image from "next/image";
+import ContactForm from "./ContactForm";
+import { useState } from "react";
 
 const EverythingEvent = () => {
+  const [formActive, setFormActive] = useState(false);
   return (
     <div className="container mx-auto xl:max-w-7xl relative -mb-28 md:-mb-[204px] ">
       <Image
@@ -17,7 +20,10 @@ const EverythingEvent = () => {
             Everything <br />
             event for you
           </h3>
-          <button className="hidden md:block">
+          <button
+            onClick={() => setFormActive(true)}
+            className="hidden md:block"
+          >
             <svg
               width="200"
               height="200"
@@ -31,11 +37,25 @@ const EverythingEvent = () => {
               />
             </svg>
           </button>
-          <button className=" md:hidden h-14 w-14  sm:h-20 sm:w-20 border-[5px] border-[#DF4D31] text-[#DF4D31] text-5xl sm:text-6xl rounded-full grid place-items-center">
+          <button
+            onClick={() => setFormActive(true)}
+            className=" md:hidden h-14 w-14  sm:h-20 sm:w-20 border-[5px] border-[#DF4D31] text-[#DF4D31] text-5xl sm:text-6xl rounded-full grid place-items-center"
+          >
             &rarr;
           </button>
         </div>
       </div>
+      {formActive && (
+        <div className=" overflow-hidden">
+          <div
+            onClick={() => setFormActive(false)}
+            className=" fixed inset-0 bg-black z-50 bg-opacity-70 w-screen h-screen overflow-hidden cursor-pointer"
+          ></div>
+          <div className=" fixed top-[5%] md:w-[662px] left-[5%] right-[5%] bottom-[5%] mx-auto overflow-auto h-auto max-h-[804px] z-[60] p-5 bg-white rounded-lg ">
+            <ContactForm />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
