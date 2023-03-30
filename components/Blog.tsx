@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import BlurData from "./BlurData";
 
 interface Props {
   post: Post;
@@ -26,7 +27,7 @@ const Blog = ({ post, otherPosts }: Props) => {
           <Image
             quality={30}
             placeholder="blur"
-            blurDataURL="/rarr.png"
+            blurDataURL={BlurData()}
             src={post.image}
             alt={post.name}
             fill
@@ -40,7 +41,7 @@ const Blog = ({ post, otherPosts }: Props) => {
               <Image
                 quality={30}
                 placeholder="blur"
-                blurDataURL="/rarr.png"
+                blurDataURL={BlurData()}
                 src={post.image}
                 alt={post.author}
                 height={80}

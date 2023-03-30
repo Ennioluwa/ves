@@ -23,13 +23,6 @@ const services = () => {
             priority
           />
         </div>
-        <div className=" absolute inset-0 w-full h-full grid place-items-center">
-          {/* <p className="  font-extrabold text-7xl leading-[100px] md:text-[140px] md:leading-[150px] lg:text-[182.25px] lg:leading-[184px] text-center">
-              Explore the
-              <br />
-              moments
-            </p> */}
-        </div>
         <div className=" absolute top-0 left-0 right-0 w-full ">
           <Navbar text="services" />
         </div>

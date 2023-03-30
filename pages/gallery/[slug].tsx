@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {
+  BlurData,
   EverythingEvent,
   Footer,
   Gallery,
@@ -16,7 +17,7 @@ const gallery = (props: Gallery) => {
           <Image
             quality={30}
             placeholder="blur"
-            blurDataURL="/rarr.png"
+            blurDataURL={BlurData()}
             className=" -z-10 w-full brightness-50 object-cover"
             src={props.heroImage}
             alt={"hero image"}

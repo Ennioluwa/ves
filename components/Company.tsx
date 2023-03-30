@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { posts } from "../data/posts";
+import BlurData from "./BlurData";
 import EverythingEvent from "./EverythingEvent";
 
 const Company = () => {
@@ -23,7 +24,7 @@ const Company = () => {
           <Image
             quality={30}
             placeholder="blur"
-            blurDataURL="/rarr.png"
+            blurDataURL={BlurData()}
             src={posts[0].image}
             alt={posts[0].title}
             fill
@@ -48,7 +49,7 @@ const Company = () => {
                   <Image
                     quality={30}
                     placeholder="blur"
-                    blurDataURL="/rarr.png"
+                    blurDataURL={BlurData()}
                     src={post.image}
                     alt={post.name}
                     fill

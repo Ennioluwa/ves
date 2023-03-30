@@ -18,3 +18,4 @@ export { default as IndividualGallery } from "./IndividualGallery";
 export { default as ContactForm } from "./ContactForm";
 export { default as About } from "./About";
 export { default as AboutIcons } from "./AboutIcons";
+export { default as BlurData } from "./BlurData";

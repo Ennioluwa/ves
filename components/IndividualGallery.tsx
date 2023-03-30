@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BlurData from "./BlurData";
 
 const IndividualGallery = ({
   title,
@@ -26,7 +27,7 @@ const IndividualGallery = ({
                 <Image
                   quality={30}
                   placeholder="blur"
-                  blurDataURL="/rarr.png"
+                  blurDataURL={BlurData()}
                   src={images[0]}
                   alt="gallery"
                   fill
@@ -37,7 +38,7 @@ const IndividualGallery = ({
                 <Image
                   quality={30}
                   placeholder="blur"
-                  blurDataURL="/rarr.png"
+                  blurDataURL={BlurData()}
                   src={images[1]}
                   alt="gallery"
                   fill
@@ -50,7 +51,7 @@ const IndividualGallery = ({
                 <Image
                   quality={30}
                   placeholder="blur"
-                  blurDataURL="/rarr.png"
+                  blurDataURL={BlurData()}
                   src={images[2]}
                   alt="gallery"
                   fill
@@ -61,7 +62,7 @@ const IndividualGallery = ({
                 <Image
                   quality={30}
                   placeholder="blur"
-                  blurDataURL="/rarr.png"
+                  blurDataURL={BlurData()}
                   src={images[3]}
                   alt="gallery"
                   fill
@@ -73,7 +74,7 @@ const IndividualGallery = ({
               <Image
                 quality={30}
                 placeholder="blur"
-                blurDataURL="/rarr.png"
+                blurDataURL={BlurData()}
                 src={images[4]}
                 alt="gallery"
                 fill

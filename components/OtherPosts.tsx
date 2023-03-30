@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import BlurData from "./BlurData";
 
 interface Props {
   otherPosts: Post[];
@@ -23,7 +24,7 @@ const OtherPosts = ({ otherPosts }: Props) => {
                     <Image
                       quality={30}
                       placeholder="blur"
-                      blurDataURL="/rarr.png"
+                      blurDataURL={BlurData()}
                       src={post.image}
                       alt={post.name}
                       fill
