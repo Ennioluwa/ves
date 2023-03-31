@@ -13,7 +13,7 @@ const gallery = (props: Gallery) => {
   return (
     <div className=" flex flex-col">
       <div className="relative text-white">
-        <div className="relative -z-10 h-[60vh] w-full">
+        <div className="relative -z-10 h-[60vh] lg:h-screen object-center-top w-full">
           <Image
             quality={30}
             placeholder="blur"
