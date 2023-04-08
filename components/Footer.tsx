@@ -32,7 +32,7 @@ const Footer = () => {
           </ul>
           <ul className="flex-1 space-y-2 text-[16px] leading-[24px] ">
             <li className=" mb-2 text-[24px] leading-[32px]">Need Help?</li>
-            <li>veee.events21@gmail.com</li>
+            <li>info@veee-events.com</li>
             <li>+1 (214) 755-3638</li>
           </ul>
         </div>
@@ -68,7 +68,7 @@ const Footer = () => {
 
         <div className="flex justify-center items-center gap-5 text-[12px] leading-[16px] ">
           <p className=" text-[#6E796F]">
-            VES Copyright ©2023. All Rights Reserved
+            VEEE Copyright ©2023. All Rights Reserved
           </p>
           <p className=" text-primary">Privacy Policy</p>
           <p className=" text-primary">Terms of Use</p>

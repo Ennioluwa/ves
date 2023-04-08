@@ -41,7 +41,7 @@ const ContactForm = () => {
       </div>
       <div className=" flex flex-col gap-2">
         <label htmlFor="price" className=" font-bold">
-          Price Range <span className=" text-primary">*</span>
+          Budget <span className=" text-primary">*</span>
         </label>
         <input
           type="text"

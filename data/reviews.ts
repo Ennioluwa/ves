@@ -1,26 +1,26 @@
 export const reviews = [
   {
     content:
-      "I cannot thank Ves Events and Solutions enough for making my wedding day the best day of my life. From the initial consultation to executing the event itself, everything was flawless",
-    name: "Sarah Robinson",
-    title: "Bride and Customer, VES Event (Wedding) Planning",
+      "I cannot thank Veee Events and Solutions enough for making my wedding day the best day of my life. From the initial consultation to executing the event itself, everything was flawless",
+    name: "Christianna",
+    title: "Bride and Customer, VEEE Event (Wedding) Planning",
   },
   {
     content:
-      "If you want a memorable event that people will be talking about for years to come, look no further than Ves Events and Solutions. They are creative, organized and have a keen eye for detail. I can't wait to work with them again in the future.",
-    name: "Michael Rodriguez",
-    title: "Groom and Customer, VES Event (Wedding) Planning",
+      "We couldn't have asked for a better wedding planner than Veee Events and Designs. They took care of every little detail and made sure that everything went according to plan. They went above and beyond to ensure that we were taken care of throughtout the day. We highly recommend this wedding planner to anyone looking for a truly unforgettable wedding experience.",
+    name: "Frank",
+    title: "Groom and Customer, VEEE Event (Wedding) Planning",
   },
   {
     content:
-      "The team at Ves Events and Solutions really knows how to throw a party! From the decorations to the entertainment, they exceeded my expectations. They made sure everyone had a great time and I received so many compliments from my guests.",
-    name: "Emily Kim",
-    title: "Celebrant and Customer, VES Event (Birthday) Planning",
+      "Veee events and designs created an amazing celebration for my 40th birthday! The team was professional, friendly, and took care of every detail. The decor, food, and service were outstanding. I highly recommend them for anyone looking for top-notch event planning and design. Thank you for making my birthday unforgettable!",
+    name: "Segun",
+    title: "Celebrant and Customer, VEEE Event (Birthday) Planning",
   },
   {
     content:
-      "I highly recommend Ves Events and Solutions for any event you may have. They were able to take my vision and turn it into a reality. The team was responsive, flexible and truly cared about making sure everything was perfect.",
-    name: "John Adams",
-    title: "Customer, VES Event (Corporate Party) Planning",
+      "My heartfelt appreciation goes out to Veee events and designs for making my birthday celebration an unforgettable experience. Their team's exceptional attention to detail brought my vision to life, resulting in an outstanding event that exceeded my expectations. The seamless execution of every aspect of the occasion, from the exquisite decor to the sumptuous food, was truly remarkable.",
+    name: "Vee",
+    title: "Customer, VEEE Event (Corporate Party) Planning",
   },
 ];

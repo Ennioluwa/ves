@@ -13,18 +13,12 @@ import {
 const Home: NextPage = () => {
   return (
     <div className="">
-      <Head>
-        <title>Ves</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className="">
-        <Hero />
-        <Quote />
-        <PastEvents />
-        <Services />
-        <Reviews />
-        <Footer />
-      </div>
+      <Hero />
+      <Quote />
+      <PastEvents />
+      <Services />
+      <Reviews />
+      <Footer />
     </div>
   );
 };

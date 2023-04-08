@@ -77,7 +77,7 @@ const ServicePage = () => {
           <p className="text-xl leading-8 md:text-2xl md:leading-8 text-[#A7AEA8]">
             Don't just sit back and imagine{" "}
             <span className=" text-white">your perfect event</span> - let us
-            help you bring it to life! We make it all possible at VES.
+            help you bring it to life! We make it all possible at VEEE.
           </p>
           <div className="flex flex-col md:flex-row justify-between gap-10 mt-20">
             <EventServices />
@@ -139,60 +139,61 @@ const ServicePage = () => {
           </h4>
           <div className="flex gap-5 flex-col sm:flex-row">
             <div className="sm:flex-1 bg-black rounded-lg w-full relative">
-              <Image
-                quality={30}
-                placeholder="blur"
-                src={gallery1}
-                alt="service image"
-                className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "
-              />
-              <div
-                onMouseEnter={() => setShow(1)}
-                onMouseLeave={() => setShow(0)}
-                className="flex flex-col justify-center items-center absolute p-5 inset-0 hover:bg-primary hover:bg-opacity-[0.88] z-20 rounded-lg text-transparent hover:text-white"
-              >
-                {show === 1 && (
-                  <div className=" flex flex-col gap-2 items-center">
-                    <p className=" text-4xl md:text-2xl lg:text-4xl lg:mb-2 font-extrabold tracking-tight">
-                      Christianna &<br />
-                      Palmer Wedding
-                    </p>
-                    <Link href="/gallery/christianna-and-palmer">
+              <Link href="/gallery/christianna-and-valmy">
+                <Image
+                  quality={30}
+                  placeholder="blur"
+                  src={gallery1}
+                  alt="service image"
+                  className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "
+                />
+                <div
+                  onMouseEnter={() => setShow(1)}
+                  onMouseLeave={() => setShow(0)}
+                  className="flex flex-col justify-center items-center absolute p-5 inset-0 hover:bg-primary hover:bg-opacity-[0.88] z-20 rounded-lg text-transparent hover:text-white"
+                >
+                  {show === 1 && (
+                    <div className=" flex flex-col gap-2 items-center">
+                      <p className=" text-4xl md:text-2xl lg:text-4xl lg:mb-2 font-extrabold tracking-tight">
+                        Christianna &<br />
+                        Valmy's Wedding
+                      </p>
                       <p className="  text-5xl h-[50px] w-[50px] rounded-full grid place-items-center text-[#611A0C] border-4 border-[#611A0C] ">
                         &rarr;
                       </p>
-                    </Link>
-                  </div>
-                )}
-              </div>
+                    </div>
+                  )}
+                </div>
+              </Link>
             </div>
             <div className="sm:flex-1 bg-black rounded-lg w-full relative">
-              <Image
-                quality={30}
-                placeholder="blur"
-                src={gallery2}
-                alt="service image"
-                className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "
-              />
-              <div
-                onMouseEnter={() => setShow(2)}
-                onMouseLeave={() => setShow(0)}
-                className="flex flex-col justify-center items-center absolute p-5 inset-0 hover:bg-primary hover:bg-opacity-[0.88] z-20 rounded-lg text-transparent hover:text-white"
-              >
-                {show === 2 && (
-                  <div className=" flex flex-col gap-2 items-center">
-                    <p className=" text-4xl md:text-2xl lg:text-4xl lg:mb-2 font-extrabold tracking-tight">
-                      Christianna &<br />
-                      Palmer Wedding
-                    </p>
-                    <Link href="/gallery/christianna-and-palmer">
+              <Link href="/gallery/40th-birthday">
+                <Image
+                  quality={30}
+                  placeholder="blur"
+                  src={gallery2}
+                  alt="service image"
+                  className=" object-cover w-full h-[350px] md:h-[220px] lg:h-[348px] rounded-lg "
+                />
+                <div
+                  onMouseEnter={() => setShow(2)}
+                  onMouseLeave={() => setShow(0)}
+                  className="flex flex-col justify-center items-center absolute p-5 inset-0 hover:bg-primary hover:bg-opacity-[0.88] z-20 rounded-lg text-transparent hover:text-white"
+                >
+                  {show === 2 && (
+                    <div className=" flex flex-col gap-2 items-center">
+                      <p className=" text-4xl md:text-2xl lg:text-4xl lg:mb-2 font-extrabold tracking-tight">
+                        40th Birthday
+                        <br />
+                        Party
+                      </p>
                       <p className="  text-5xl h-[50px] w-[50px] rounded-full grid place-items-center text-[#611A0C] border-4 border-[#611A0C] ">
                         &rarr;
                       </p>
-                    </Link>
-                  </div>
-                )}
-              </div>
+                    </div>
+                  )}
+                </div>
+              </Link>
             </div>
           </div>
         </div>

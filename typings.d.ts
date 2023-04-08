@@ -6,6 +6,7 @@ interface Post {
   date: string;
   time: string;
   author: string;
+  authorImage: string;
   content: { type: string; text: string[] }[];
 }
 interface Gallery {

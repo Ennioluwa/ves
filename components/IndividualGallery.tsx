@@ -23,7 +23,7 @@ const IndividualGallery = ({
           </div>
           <div className="flex flex-col gap-5 h-full w-full">
             <div className=" flex flex-col md:flex-row gap-5 ">
-              <div className="relative md:flex-[2]  h-[350px] md:h-[220px] lg:h-[348px]">
+              <div className="relative md:flex-[2]  h-[350px] md:h-[320px] lg:h-[500px]">
                 <Image
                   quality={30}
                   placeholder="blur"
@@ -34,7 +34,7 @@ const IndividualGallery = ({
                   className=" rounded-lg object-cover"
                 />
               </div>
-              <div className="relative md:flex-1  h-[350px] md:h-[220px] lg:h-[348px]">
+              <div className="relative md:flex-1  h-[350px] md:h-[320px] lg:h-[500px]">
                 <Image
                   quality={30}
                   placeholder="blur"
@@ -47,7 +47,7 @@ const IndividualGallery = ({
               </div>
             </div>
             <div className=" flex flex-col md:flex-row gap-5">
-              <div className="relative md:flex-1  h-[350px] md:h-[220px] lg:h-[348px]">
+              <div className="relative md:flex-1  h-[350px] md:h-[320px] lg:h-[500px]">
                 <Image
                   quality={30}
                   placeholder="blur"
@@ -58,7 +58,7 @@ const IndividualGallery = ({
                   className=" rounded-lg object-cover"
                 />
               </div>
-              <div className="relative md:flex-1  h-[350px] md:h-[220px] lg:h-[348px]">
+              <div className="relative md:flex-1  h-[350px] md:h-[320px] lg:h-[500px]">
                 <Image
                   quality={30}
                   placeholder="blur"
@@ -70,7 +70,7 @@ const IndividualGallery = ({
                 />
               </div>
             </div>
-            <div className="relative  h-[350px] md:h-[220px] lg:h-[348px] -mb-5">
+            <div className="relative  h-[350px] md:h-[320px] lg:h-[500px] -mb-5">
               <Image
                 quality={30}
                 placeholder="blur"

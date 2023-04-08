@@ -8,6 +8,8 @@ interface Props {
   otherPosts: Post[];
 }
 
+// TODO - AUTHOR'S PICTURE
+
 const Blog = ({ post, otherPosts }: Props) => {
   return (
     <section className="px-5 sm:px-10">
@@ -31,7 +33,7 @@ const Blog = ({ post, otherPosts }: Props) => {
             src={post.image}
             alt={post.name}
             fill
-            className=" w-[100vw] hover:scale-105 duration-700 object-cover rounded-lg  "
+            className=" w-[100vw] hover:scale-105 duration-700 object-cover rounded-lg object-center-top "
           />
         </div>
 
@@ -42,11 +44,11 @@ const Blog = ({ post, otherPosts }: Props) => {
                 quality={30}
                 placeholder="blur"
                 blurDataURL={BlurData()}
-                src={post.image}
+                src={post.authorImage}
                 alt={post.author}
                 height={80}
                 width={80}
-                className="object-cover rounded-full h-20 w-20 bg-gray-200"
+                className="object-cover rounded-full h-20 w-20 bg-gray-200 object-top"
               />
               <div className="leading-6">
                 <p className="text-[#222823]  font-bold">{post.author}</p>
@@ -67,6 +69,7 @@ const Blog = ({ post, otherPosts }: Props) => {
                       <span>{text}</span>
                     </div>
                   ))}
+                {value.type === "body" && <p className="">{value.text}</p>}
                 {value.type === "footer" && <h2>{value.text}</h2>}
               </div>
             ))}
