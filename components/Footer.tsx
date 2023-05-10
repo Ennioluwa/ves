@@ -36,7 +36,7 @@ const Footer = () => {
             <li>+1 (214) 755-3638</li>
           </ul>
         </div>
-
+        {/* TODO - add the correct links to the social media icons */}
         <div className="flex gap-4">
           <Link
             href={"https://facebook.com"}

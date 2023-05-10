@@ -48,8 +48,8 @@ export const galleryPages: Gallery[] = [
     },
   },
   {
-    heroImage: "/gallery/img13.png",
-    title: "Wedding",
+    heroImage: "/gallery/segun-at-40/1.jpg",
+    title: "Birthday",
     header: "Segun at 40",
     slug: "segun-at-40",
     content: [
@@ -58,11 +58,11 @@ export const galleryPages: Gallery[] = [
       `On the day of the party, our team was there to ensure that everything ran smoothly, and that Segun and his guests could relax and enjoy the festivities. It was a privilege to see Segun surrounded by loved ones, celebrating this milestone birthday in style. At Veee Events and Solutions, we are committed to making every event unforgettable, and Segun's 40th birthday celebration was no exception.`,
     ],
     images: [
-      "/gallery/img8.png",
-      "/gallery/img8.png",
-      "/gallery/img8.png",
-      "/gallery/img8.png",
-      "/gallery/img8.png",
+      "/gallery/segun-at-40/1.jpg",
+      "/gallery/segun-at-40/2.jpg",
+      "/gallery/segun-at-40/3.jpg",
+      "/gallery/segun-at-40/4.jpg",
+      "/gallery/segun-at-40/5.jpg",
     ],
     review: {
       content:

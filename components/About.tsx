@@ -64,7 +64,6 @@ const About = () => {
             </div>
             <div className=" h-full w-full flex flex-col gap-5">
               <div className=" w-full h-60 bg-gray-400 rounded-lg relative overflow-clip">
-                {" "}
                 <Image
                   quality={30}
                   placeholder="blur"
@@ -75,7 +74,6 @@ const About = () => {
                 />
               </div>
               <div className=" w-full h-80 bg-gray-400 rounded-lg relative overflow-clip">
-                {" "}
                 <Image
                   quality={30}
                   placeholder="blur"
@@ -127,7 +125,6 @@ const About = () => {
                 />
               </div>
               <div className=" w-full h-80 bg-gray-400 rounded-lg relative overflow-clip">
-                {" "}
                 <Image
                   quality={30}
                   placeholder="blur"

@@ -8,8 +8,6 @@ interface Props {
   otherPosts: Post[];
 }
 
-// TODO - AUTHOR'S PICTURE
-
 const Blog = ({ post, otherPosts }: Props) => {
   return (
     <section className="px-5 sm:px-10">

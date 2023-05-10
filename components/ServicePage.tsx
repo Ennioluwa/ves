@@ -113,7 +113,7 @@ const ServicePage = () => {
               </div>
             ))}
           </div>
-          <div className="z-30 flex justify-center space-x-3 mt-[30px] ">
+          <div className="z-30 flex justify-center space-x-3 mt-10 md:mt-32 lg:mt-28 xl:mt-20 ">
             {reviews.map((review, i) => (
               <button
                 key={i}

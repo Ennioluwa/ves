@@ -6,7 +6,6 @@ import {
   Navbar,
   ServicePage,
 } from "../components";
-// todo
 import heroImage from "../public/gallery/img14.png";
 
 const services = () => {
